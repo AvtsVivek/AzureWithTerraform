@@ -5,7 +5,7 @@ terraform {
     azurerm = {
       source = "hashicorp/azurerm"
       # https://registry.terraform.io/providers/hashicorp/azurerm/latest
-      version = "~>2.0"
+      version = "~>3.0"
       # version = "2.85.0"
     }
   }
