@@ -1,5 +1,5 @@
 
-cd iac\100080-random-examples
+cd iac\100200-create-rg-azuredocs
 
 # Terraform follows, the following workflow.
 

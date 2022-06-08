@@ -1,8 +1,13 @@
-cd iac/2-create-rg-simple
 
-terraform fmt
+cd iac\100081-random-examples
+
+# Terraform follows, the following workflow.
+
+# Init, Plan, Validate, Apply, and then Destroy
 
 terraform init
+
+terraform fmt # formats the tf files.
 
 terraform validate
 

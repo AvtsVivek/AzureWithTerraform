@@ -1,13 +1,8 @@
+cd iac/100100-create-rg-simple
 
-cd iac\1-create-rg-azuredocs
-
-# Terraform follows, the following workflow.
-
-# Init, Plan, Validate, Apply, and then Destroy
+terraform fmt
 
 terraform init
-
-terraform fmt # formats the tf files.
 
 terraform validate
 

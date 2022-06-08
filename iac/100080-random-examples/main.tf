@@ -1,5 +1,7 @@
 # Terraform settings Block
 
+# This demonistrates random_string and random_id
+
 terraform {
   required_providers {
     random = {
