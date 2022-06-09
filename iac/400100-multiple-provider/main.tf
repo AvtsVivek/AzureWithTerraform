@@ -59,6 +59,7 @@ resource "azurerm_resource_group" "myrg2" {
   name     = "vivek-2-rg"
   location = "westindia"
   provider = azurerm.provider-for-westindia
+  # here, provider is a meta argument.
 }
 
 
