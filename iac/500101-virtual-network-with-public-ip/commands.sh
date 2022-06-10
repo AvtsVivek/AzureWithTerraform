@@ -1,5 +1,5 @@
 
-cd iac\500100-virtual-network
+cd iac\500101-virtual-network-with-public-ip
 
 terraform fmt
 
