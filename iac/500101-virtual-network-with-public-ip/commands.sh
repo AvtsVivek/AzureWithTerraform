@@ -1,5 +1,5 @@
 
-cd iac\500101-virtual-network-trial
+cd iac\500100-virtual-network
 
 terraform fmt
 
