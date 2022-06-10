@@ -1,10 +1,10 @@
 # create virtual network
 resource "azurerm_virtual_network" "myvnet" {
   name                = "vivek-1-vnet"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["10.0.0.0/16"] # This is a list, it has []. If it has { }, then its a map.
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
-  tags = {
+  tags = { # This is a map. This is {}
     "name" = "vivek-1-vnet"
   }
 }

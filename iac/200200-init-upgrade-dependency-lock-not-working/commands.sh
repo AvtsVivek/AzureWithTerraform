@@ -1,9 +1,13 @@
 
-cd iac\500100-virtual-network
+cd iac\200200-init-upgrade-dependency-lock
 
-terraform fmt
+# Terraform follows, the following workflow.
+
+# Init, Plan, Validate, Apply, and then Destroy
 
 terraform init
+
+terraform fmt # formats the tf files.
 
 terraform validate
 
