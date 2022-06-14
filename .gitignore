@@ -23,6 +23,9 @@
 # .pem files
 *.pub
 
+# .pem files
+*.pub
+
 # .hcl files from Terraform v0.14 and newer
 *.hcl
 # .terraform.lock.hcl must be included in the version control. But the following does not work.

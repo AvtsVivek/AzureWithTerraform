@@ -21,11 +21,16 @@ resource "azurerm_linux_virtual_machine" "mylinuxvm" {
     name                 = "vivek-1-osdisk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
+    # storage_account_type = "D2ads_v5"
   }
   source_image_reference {
-    publisher = "RedHat"
-    offer     = "RHEL"
-    sku       = "83-gen2"
+    # publisher = "RedHat"
+    # offer     = "RHEL"
+    # sku       = "83-gen2"
+
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
     version   = "latest"
   }
   custom_data = filebase64("${path.module}/app-scripts/app1-cloud-init.txt")

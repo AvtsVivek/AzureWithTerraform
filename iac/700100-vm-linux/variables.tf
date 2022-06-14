@@ -1,6 +1,8 @@
 
 variable "resource_group_location" {
-  default     = "centralindia"
+  #default     = "westus3"
+  default = "centralindia"
+  # default     = "centralus"
   description = "Location of the resource group."
 }
 

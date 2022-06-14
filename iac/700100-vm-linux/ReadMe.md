@@ -3,7 +3,9 @@ You need to first create Ssh keys in ssh folder.
 For that [ensure Open Ssh is installed on your computer as follows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse#install-openssh-using-powershell).
 
 1. Open power shell with admin rights and run the following command. 
+```t   
    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+```
 2. If not already installed, then install using the following commands
    # Install the OpenSSH Client
    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
@@ -47,7 +49,10 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
     Ensure the keys are created.
 6.  Next rename the terraform-azure.pem.pub to terraform-azure.pub. Just remove pem. This needs admin privilages. So do not do this from Vs Code explorer Rename facility.
     
-    You can use the admin powershell and run the following command Rename-Item -Path "terraform-azure.pem.pub" -NewName "terraform-azure.pub"
+    You can use the admin powershell and run the following command 
+```powershell
+    Rename-Item -Path "terraform-azure.pem.pub" -NewName "terraform-azure.pub"
+```
 
 7.  Now ensure proper permission on the private key. Right click the pem file and select properties. Then select the security tab. Do this with utmost care and full focus.
 
