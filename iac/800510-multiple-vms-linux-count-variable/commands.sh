@@ -1,5 +1,5 @@
 
-cd iac\13-multiple-vms-linux-count-variable
+cd iac\800510-multiple-vms-linux-count-variable
 
 terraform fmt
 

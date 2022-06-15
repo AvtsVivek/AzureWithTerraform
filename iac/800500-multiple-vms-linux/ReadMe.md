@@ -46,7 +46,7 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
     Enter blank password(just press enter) since this is just an example.
     Ensure the keys are created.
 
-    **Instead of all of the above 5 steps, you can run ssh. When asked for the file name, terraform-azure
+    **Instead of all of the above 5 steps, you can run ssh-keygen in git bash. When asked for the file name, terraform-azure
 
 6.  Next rename the terraform-azure.pem.pub to terraform-azure.pub. Just remove pem. This needs admin privilages. So do not do this from Vs Code explorer Rename facility.
     
