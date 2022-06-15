@@ -1,5 +1,5 @@
 
-cd ./iac/900100-terraform-console-lists
+cd ./iac/800140-terraform-console-lists
 
 cd ..
 
