@@ -16,8 +16,8 @@ resource "azurerm_subnet" "mysubnet" {
 
 # Create Public IP Address
 resource "azurerm_public_ip" "mypublicip" {
-    count = 2
-    depends_on = [
+  count = 2
+  depends_on = [
     azurerm_virtual_network.myvnet,
     azurerm_subnet.mysubnet
   ]
@@ -25,7 +25,7 @@ resource "azurerm_public_ip" "mypublicip" {
   resource_group_name = azurerm_resource_group.myrg.name
   location            = azurerm_resource_group.myrg.location
   allocation_method   = "Static"
-  domain_name_label = "app1-vm-${count.index}-${random_string.myrandom.id}"
+  domain_name_label   = "app1-vm-${count.index}-${random_string.myrandom.id}"
   tags = {
     environment = "Dev"
   }
@@ -33,7 +33,7 @@ resource "azurerm_public_ip" "mypublicip" {
 
 # Create Network Interface
 resource "azurerm_network_interface" "myvmnic" {
-  count = 2
+  count               = 2
   name                = "vivek-${count.index}-vmnic"
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
