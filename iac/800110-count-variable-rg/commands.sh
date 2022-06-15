@@ -1,5 +1,5 @@
 
-cd iac\10-count-variable-rg
+cd iac\800110-count-variable-rg
 
 terraform fmt
 
