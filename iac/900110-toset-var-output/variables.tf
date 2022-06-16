@@ -1,0 +1,7 @@
+variable "fruits" {
+  default = ["apple", "banana", "pine apple", "grape", "strawberry"]
+}
+
+output "SomeOutputVar" {
+  value = var.fruits
+}

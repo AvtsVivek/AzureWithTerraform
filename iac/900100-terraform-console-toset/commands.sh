@@ -1,5 +1,5 @@
 # cd into the directory.
-cd ./iac/12-terraform-console-toset
+cd ./iac/900100-terraform-console-toset
 
 terraform fmt
 
