@@ -1,5 +1,5 @@
 
-cd iac\15-create-rg-with-for-each-toset
+cd ./iac/1000100-create-rg-with-for-each-toset
 
 terraform fmt
 

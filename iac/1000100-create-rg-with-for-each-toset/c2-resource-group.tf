@@ -8,3 +8,7 @@ resource "azurerm_resource_group" "myrgtoset" {
 we can also use each.value as each.key = each.value 
 in this case  
 */
+
+variable "resource-group-locations" {
+  default = ["apple", "banana", "pine apple", "grape", "strawberry"]
+}
