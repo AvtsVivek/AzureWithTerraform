@@ -7,9 +7,9 @@ resource "azurerm_virtual_network" "myvnet" {
 
 
 # Lifecycle Changes
-  lifecycle {
-    create_before_destroy = true
-  }
+  # lifecycle {
+  #   create_before_destroy = true
+  # }
 
 }
 
