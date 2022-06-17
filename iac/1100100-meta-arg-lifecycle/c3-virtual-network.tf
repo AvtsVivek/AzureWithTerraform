@@ -5,12 +5,12 @@ resource "azurerm_virtual_network" "myvnet" {
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
 
-  /*
+
 # Lifecycle Changes
   lifecycle {
     create_before_destroy = true
   }
-*/
+
 }
 
 

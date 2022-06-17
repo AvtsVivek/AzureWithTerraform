@@ -9,7 +9,7 @@ variable "resource-group-name" {
 }
 
 variable "vnet-name" {
-  #default = "vivek-1-vnet"
+  # default = "vivek-1-vnet"
   default     = "vivek-2-vnet"
   description = "Virtual network name."
 }
