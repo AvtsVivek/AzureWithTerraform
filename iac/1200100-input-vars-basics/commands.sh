@@ -1,5 +1,5 @@
 
-cd iac\25-input-vars-basics
+cd iac\1200100-input-vars-basics
 
 terraform fmt
 
