@@ -6,9 +6,10 @@ resource "azurerm_virtual_network" "myvnet" {
   resource_group_name = azurerm_resource_group.myrg.name
 
   # Lifecycle Changes
-  # lifecycle {
-  #   prevent_destroy = true
-  # }
+  
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 
