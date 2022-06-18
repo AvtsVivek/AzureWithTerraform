@@ -26,8 +26,12 @@ resource "azurerm_public_ip" "mypublicip" {
   allocation_method   = "Static"
   domain_name_label   = "app1-vm-${random_string.myrandom.id}"
   sku = var.public_ip_sku["eastus"]
-  # Try with look up function
+
+  # Try with look up function. Lookup function is used to get a single value from a map given key.
+  # This is similar to element function. Element function is used to get the value from a list.
+  # And Lookup function is used to get the value from a map.
   #sku  = lookup(var.public_ip_sku, var.resoure_group_location, "Basic")
+  
   tags = var.common_tags
 }
 
