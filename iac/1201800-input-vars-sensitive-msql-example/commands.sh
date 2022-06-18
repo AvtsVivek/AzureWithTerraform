@@ -1,5 +1,5 @@
 
-cd iac\38-input-vars-sensitive-msql-example
+cd iac\1201800-input-vars-sensitive-msql-example
 
 terraform fmt
 
