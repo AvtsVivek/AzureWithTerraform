@@ -1,4 +1,5 @@
-cd ./iac/35-terraform-console-maps
+
+cd ./iac/1201400-terraform-console-maps
 
 terraform fmt
 
@@ -6,6 +7,8 @@ terraform fmt
 terraform console
 
 var.images
+
+type(var.images)
 
 # The following gives "one"
 lookup(var.images, 1, 6)
@@ -18,3 +21,5 @@ lookup(var.images, 2, 6)
 lookup(var.images, 3, 6)
 
 # So lookup helps us to get value from a map, given the key. If the key is not present, it returns the default. 6 in this case.
+
+exit
