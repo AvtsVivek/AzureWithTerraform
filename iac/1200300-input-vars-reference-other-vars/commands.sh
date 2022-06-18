@@ -1,5 +1,5 @@
 
-cd iac\27-input-vars-reference-other-vars
+cd iac\1200300-input-vars-reference-other-vars
 
 terraform fmt
 
