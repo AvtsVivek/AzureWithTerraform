@@ -35,7 +35,7 @@ variable "common_tags" {
   }
 }
 
-
+# 6. Azure MySQL Database Name
 variable "db_name" {
   description = "Azure MySQL Database DB Name"
   type        = string
