@@ -35,7 +35,13 @@ terraform apply "main.tfplan"
 
 # Now to login, you can follow this instructions
 # https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure/tree/main/28-Input-Variables-Sensitive#step-10-verify-and-connect-to-mysql-db
+# mysql -h <Azure DB Server Name> -u <Server admin login name> -pH@Sh1CoR3!
+# mysql -h vivek-hr-vivek-dev-vivek-mysql.mysql.database.azure.com -u mydbadmin@vivek-hr-vivek-dev-vivek-mysql -p
+# The above command will ask for password and then login to the database.
+# Once logged in, use the following commands.
+# show schemas;
 
+# Now, you can destroy the resources.
 terraform plan -destroy -out main.destroy.tfplan -var-file="secrets.tfvars"
 
 # secrets.tfvars should not be checked in. But for this exercise, we checked.

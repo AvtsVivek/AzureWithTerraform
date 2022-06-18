@@ -23,7 +23,7 @@ variable "resource_group_name" {
 variable "resource_group_location" {
   description = "Resource Group Location"
   type        = string
-  default     = "centralindia"
+  default     = "westeurope"
 }
 # 5. Common Tags
 variable "common_tags" {
