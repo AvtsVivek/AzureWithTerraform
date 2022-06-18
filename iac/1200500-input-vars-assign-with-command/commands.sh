@@ -19,6 +19,15 @@ terraform show main.tfplan
 # default     = "vivek-rg"
 terraform apply -var="resource_group_name=vivek-set-using-cli-var-rg"  
 
+# Note that -var is used to set the value of the variable during plan as well. 
+
+terraform plan -out main.tfplan -var="resource_group_name=vivek-set-using-cli-var-rg"
+
+# And now you can apply the plan
+
+terraform apply main.destroy.tfplan
+
+
 # Now verify on the portal.
 
 terraform plan -destroy -out main.destroy.tfplan
