@@ -1,4 +1,5 @@
-cd ./iac/36-terraform-console-functions
+
+cd ./iac/1201100-terraform-console-functions
 
 terraform fmt
 
@@ -53,6 +54,7 @@ regex("india$", "southindia")
 regex("india$", "eastindia")
 regex("india$", "eastus")
 
+# Check if the regex is working with can function.
 can(regex("india$", "westindia"))
 can(regex("india$", "centralindia"))
 can(regex("india$", "southindia"))
@@ -60,5 +62,5 @@ can(regex("india$", "eastindia"))
 can(regex("india$", "eastus"))
 
 
-
+exit
 

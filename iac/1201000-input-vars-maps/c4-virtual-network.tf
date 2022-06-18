@@ -30,8 +30,9 @@ resource "azurerm_public_ip" "mypublicip" {
   # Try with look up function. Lookup function is used to get a single value from a map given key.
   # This is similar to element function. Element function is used to get the value from a list.
   # And Lookup function is used to get the value from a map.
-  #sku  = lookup(var.public_ip_sku, var.resoure_group_location, "Basic")
-  
+  # The last argument is the default value if the key is not found.
+  # sku  = lookup(var.public_ip_sku, var.resoure_group_location, "Basic")
+
   tags = var.common_tags
 }
 

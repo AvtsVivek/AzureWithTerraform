@@ -1,5 +1,5 @@
 
-cd iac\33-input-vars-maps
+cd iac\1201000-input-vars-maps
 
 terraform fmt
 
