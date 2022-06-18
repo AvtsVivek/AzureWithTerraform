@@ -28,5 +28,8 @@ terraform plan -out main.tfplan
 #address_space       = [var.virtual_network_address_space[0]]
 # in the later case, we are specifing only one value.
 # Now run the command again
+
+terraform show main.tfplan
+
 terraform plan -out main.tfplan
 # In the output plan, take a look at the address space.

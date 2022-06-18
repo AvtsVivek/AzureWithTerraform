@@ -30,6 +30,8 @@ dir env:
 # now run the plan.
 terraform plan -out main.tfplan
 
+terraform show main.tfplan
+
 # If you are using cmd and not powershell, do NOT use quotes.
 SET TF_VAR_resource-group-name=vivek-set-using-env-var-rg
 # Do not use the following. Do not use quotes around it. This doe snot work

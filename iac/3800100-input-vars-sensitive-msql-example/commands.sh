@@ -9,6 +9,9 @@ terraform validate
 
 # Run the following command. 
 terraform plan -var-file="secrets.tfvars" -out main.tfplan
+
+terraform show main.tfplan
+
 # Now review the terraform plan
 #Observation:
 #1. Review the values for db_username and db_password in azurerm_mysql_server resource
@@ -36,6 +39,8 @@ terraform apply "main.tfplan"
 terraform plan -destroy -out main.destroy.tfplan -var-file="secrets.tfvars"
 
 # secrets.tfvars should not be checked in. But for this exercise, we checked.
+
+terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 

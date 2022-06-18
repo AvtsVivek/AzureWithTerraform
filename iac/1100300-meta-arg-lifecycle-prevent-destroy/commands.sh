@@ -11,6 +11,8 @@ terraform validate
 # prevent_destroy = true
 terraform plan -out main.tfplan
 
+terraform show main.tfplan
+
 terraform apply main.tfplan
 
 # Ensure the resource is created on the portal.
@@ -28,5 +30,7 @@ terraform plan -destroy -out main.destroy.tfplan
 # Now comment out the prevent_destroy = true
 # Ensure that lifecycle.prevent_destroy set to false or comment it out for the virtual network resource. See the file c3-virtual-network.tf
 terraform plan -destroy -out main.destroy.tfplan
+
+terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan

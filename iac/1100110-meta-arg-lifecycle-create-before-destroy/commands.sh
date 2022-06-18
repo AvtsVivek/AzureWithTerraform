@@ -9,6 +9,8 @@ terraform validate
 
 terraform plan -out main.tfplan
 
+terraform show main.tfplan
+
 terraform apply main.tfplan
 
 # Ensure the resource is created on the portal.
@@ -24,5 +26,7 @@ terraform apply main.tfplan
 # Now observe the sets of action. First it will create and then it will destroy the vnet with the new name. 
 
 terraform plan -destroy -out main.destroy.tfplan
+
+terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan

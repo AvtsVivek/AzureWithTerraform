@@ -17,6 +17,8 @@ terraform validate
 # Ensure that lifecycle.ingore_changes is NOT set for the virtual network resource. See the file c3-virtual-network.tf
 terraform plan -out main.tfplan
 
+terraform show main.tfplan
+
 terraform apply main.tfplan
 
 # Ensure the resource is created on the portal.
@@ -36,5 +38,7 @@ terraform apply main.tfplan
 # Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 
 terraform plan -destroy -out main.destroy.tfplan
+
+terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan

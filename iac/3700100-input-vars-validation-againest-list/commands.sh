@@ -13,6 +13,9 @@ terraform validate
 terraform plan -out main.tfplan
 # This shuld pass.
 
+terraform show main.tfplan
+
+
 # Now change second_resource_group_location = "eastus" in the terraform.tfvars file
 # Run the following command. 
 terraform plan -out main.tfplan

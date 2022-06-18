@@ -14,3 +14,5 @@ terraform plan -out main.tfplan
 
 # Now try with lookup function. See the file c4-virtual-network.tf, azurerm_public_ip in it sku.
 # So lookup helps us to get value from a map, given the key. If the key is not present, it returns the default. 
+
+terraform show main.tfplan

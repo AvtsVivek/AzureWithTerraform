@@ -9,6 +9,8 @@ terraform validate
 # terraform plan -var resource_group_name=vnet-main -out vnet.tfplan
 terraform plan -out vnet.tfplan
 
+terraform show main.tfplan
+
 terraform apply vnet.tfplan
 
 #terraform plan -var resource_group_name=vnet-main -destroy -out vnet.destroy.tfplan

@@ -14,4 +14,5 @@ terraform plan -out main.tfplan
 # Note that environment variables if set will take precedence over tfvars files.
 # So for this exercise, start with a new command prompt, do not use old one, as they may contina some evn vars.
 
+terraform show main.tfplan
 
