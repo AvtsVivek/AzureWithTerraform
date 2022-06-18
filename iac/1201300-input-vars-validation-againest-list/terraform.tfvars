@@ -1,0 +1,5 @@
+resource_group_name            = "vivek-validation-againest-list-1-rg"
+resource_group_location        = "eastus"
+second_resource_group_name     = "vivek-validation-againest-list-2-rg"
+second_resource_group_location = "southindia"
+#second_resource_group_location = "eastus"
