@@ -10,3 +10,9 @@ instances = [ # you specified a list so we add the proper syntax here
     tags  = { "Name" = "Test M4" }
   }
 ]
+
+object-type-var = {
+  location       = "eastus"
+  size           = "verybig"
+  instance_count = 1234
+}
