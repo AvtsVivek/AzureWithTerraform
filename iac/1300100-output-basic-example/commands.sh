@@ -19,6 +19,8 @@ terraform apply main.tfplan
 
 terraform output
 
+terraform output resource_group_id
+
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform show main.destroy.tfplan
