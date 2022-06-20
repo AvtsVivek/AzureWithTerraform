@@ -15,9 +15,6 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
-
-
-
 # Launch Terraform console
 terraform console
 
