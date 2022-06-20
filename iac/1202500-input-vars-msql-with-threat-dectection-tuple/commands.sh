@@ -1,6 +1,10 @@
 
 cd iac\1202500-input-vars-msql-with-threat-dectection-tuple
 
+cd ../..
+
+code . -r
+
 terraform fmt
 
 terraform init
