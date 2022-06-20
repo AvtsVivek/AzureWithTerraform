@@ -17,6 +17,8 @@ terraform show main.tfplan
 
 terraform apply main.tfplan
 
+terraform output
+
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform show main.destroy.tfplan
