@@ -1,5 +1,5 @@
 
-cd iac\1400200-splat-with-count
+cd iac\1400200-output-count-with-splat-rg
 
 cd ..\..
 
