@@ -13,3 +13,9 @@ resource "azurerm_storage_account" "storage-for-tfstate" {
     versioning_enabled = true
   }
 }
+
+resource "azurerm_storage_container" "containerfortfstate" {
+  name                  = "tfstatefiles"
+  storage_account_name  = azurerm_storage_account.storage-for-tfstate.name
+  container_access_type = "private"
+}
