@@ -1,9 +1,15 @@
 
-cd ./iac/1800200-remote-state-storage-locking-simple-rg
+cd ./iac/1800400-remote-state-datasource
 
 cd ../..
 
 code . -r
+
+mkdir ssh-keys
+
+cd ssh-keys
+
+ssh-keygen
 
 terraform init
 
