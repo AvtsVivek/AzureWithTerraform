@@ -6,10 +6,3 @@ resource "azurerm_resource_group" "myrg" {
   # tags = local.common_tags
 }
 
-output "output_temp" {
-  value = "here is the output"
-}
-
-output "resource_group_name" {
-  value = azurerm_resource_group.myrg.name
-}
