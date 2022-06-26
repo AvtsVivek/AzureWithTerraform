@@ -21,6 +21,12 @@ terraform show main.tfplan
 
 terraform apply main.tfplan
 
+terraform state list
+
+# For the following command to work, you need to pass on the resource, or data source.
+# This resource or data source is got from terraform state list command
+terraform show 
+
 # Ensure the resource is created on the portal.
 # Look for the tags created by terraform.
 # Now manually add one more tag to the virtual network resource form the portal. WebServer = Apache

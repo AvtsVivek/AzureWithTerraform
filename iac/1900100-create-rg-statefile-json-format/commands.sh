@@ -1,4 +1,5 @@
-cd iac/100100-create-rg-simple
+
+cd iac/1900100-create-rg-statefile-json-format
 
 terraform fmt
 
@@ -10,13 +11,17 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
+terraform show -json main.tfplan 
+
+# Jq is needed to be installe for the following command to work.
+
+terraform show -json main.tfplan | jq
+
 terraform apply main.tfplan
 
 terraform state list
 
-# For the following command to work, you need to pass on the resource, or data source.
-# This resource or data source is got from terraform state list command
-terraform show 
+terraform state show azurerm_resource_group.rg
 
 terraform plan -destroy -out main.destroy.tfplan
 

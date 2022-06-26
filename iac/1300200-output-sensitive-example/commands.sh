@@ -15,6 +15,12 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
+terraform state list
+
+# For the following command to work, you need to pass on the resource, or data source.
+# This resource or data source is got from terraform state list command
+terraform show 
+
 terraform apply main.tfplan
 
 terraform output

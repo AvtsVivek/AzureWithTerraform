@@ -16,6 +16,12 @@ terraform plan -var-file="secrets.tfvars" -out main.tfplan
 
 terraform show main.tfplan
 
+terraform state list
+
+# For the following command to work, you need to pass on the resource, or data source.
+# This resource or data source is got from terraform state list command
+terraform show 
+
 # Now review the terraform plan
 #Observation:
 #1. Review the values for db_username and db_password in azurerm_mysql_server resource

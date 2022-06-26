@@ -13,6 +13,12 @@ terraform show main.tfplan
 
 terraform apply main.tfplan
 
+terraform state list
+
+# For the following command to work, you need to pass on the resource, or data source.
+# This resource or data source is got from terraform state list command
+terraform show 
+
 # Once created, go to the portal, enzure the resources are created, and vm is in running state.
 
 # Once created, get the dns name and ip address of the newly created vm.
