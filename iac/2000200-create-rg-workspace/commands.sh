@@ -1,21 +1,17 @@
 
-cd iac\2000100-workspace-cli
+cd iac\2000200-create-rg-workspace
 
 cd ..\..
 
-# Terraform follows, the following workflow.
-
-# Init, Plan, Validate, Apply, and then Destroy
+terraform fmt
 
 terraform init
+
+terraform validate
 
 terraform workspace list
 
 terraform workspace show
-
-terraform fmt # formats the tf files.
-
-terraform validate
 
 terraform plan -out main.tfplan
 
@@ -28,6 +24,10 @@ terraform state list
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
 terraform state show 
+
+terraform state show azurerm_resource_group.rg
+
+terraform show terraform.tfstate
 
 terraform plan -destroy -out main.destroy.tfplan
 
