@@ -17,7 +17,7 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform show 
+terraform state show 
 
 # Ensure the resource is created on the portal.
 # Now change the virtual network name from "vivek-1-myvnet" to "vivek-2-myvnet"(see the file c4-variables.tf and look for the variable vnet-name)

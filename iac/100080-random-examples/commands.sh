@@ -1,6 +1,8 @@
 
 cd iac\100080-random-examples
 
+cd ..\..
+
 # Terraform follows, the following workflow.
 
 # Init, Plan, Validate, Apply, and then Destroy
@@ -21,7 +23,9 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform show 
+terraform state show random_id.my_id
+
+terraform state show 
 
 terraform plan -destroy -out main.destroy.tfplan
 

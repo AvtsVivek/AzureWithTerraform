@@ -1,6 +1,8 @@
 
 cd iac\100200-create-rg-azuredocs
 
+cd ..\..
+
 # Terraform follows, the following workflow.
 
 # Init, Plan, Validate, Apply, and then Destroy
@@ -21,7 +23,11 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
+terraform state show
+
 terraform show 
+
+terraform show terraform.tfstate
 
 terraform plan -destroy -out main.destroy.tfplan
 

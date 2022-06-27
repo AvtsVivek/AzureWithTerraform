@@ -17,7 +17,7 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform show 
+terraform state show 
 
 # Once created, go to the portal, ensure the resource groups are created
 terraform plan -destroy -out main.destroy.tfplan
