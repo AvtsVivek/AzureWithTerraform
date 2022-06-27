@@ -1,6 +1,5 @@
 
-
-cd iac\1900300-create-rg-rm-statefile
+cd iac/1900200-create-rg-mv-statefile
 
 cd ..\..
 
@@ -27,9 +26,9 @@ terraform state list
 terraform state show azurerm_resource_group.rg
 
 # This only changes the state file.
-terraform state rm --dry-run azurerm_resource_group.rg azurerm_resource_group.rg_new
+terraform state mv --dry-run azurerm_resource_group.rg azurerm_resource_group.rg_new
 
-terraform state rm azurerm_resource_group.rg azurerm_resource_group.rg_new
+terraform state mv azurerm_resource_group.rg azurerm_resource_group.rg_new
 
 terraform state list
 
@@ -40,11 +39,3 @@ terraform plan -destroy -out main.destroy.tfplan
 terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
-
-terraform plan -out main.tfplan --refresh-only
-
-terraform state list
-
-terraform show main.tfplan
-
-terraform apply main.tfplan
