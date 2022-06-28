@@ -16,6 +16,10 @@ terraform workspace list
 
 terraform workspace show
 
+terraform workspace delete dev-2
+
+terraform workspace select default
+
 terraform workspace select dev
 
 terraform workspace list
