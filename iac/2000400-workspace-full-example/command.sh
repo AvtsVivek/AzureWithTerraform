@@ -72,11 +72,27 @@ terraform apply main.destroy.tfplan
 
 terraform workspace list
 
+# Now try to delete the default workspace.
+# But it cannot be deleted. This is because it contains resources.
+# To delete the default workspace, you need to delete all of the resources.
 terraform workspace select default
 
+# So switch to the default workspace.
+terraform workspace select default
+
+# Now delete the default the resrouces.
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 
+# Now that all of the resources are deleted from all of the workspaces, you can now dtelete the dev workspace.
+
+terraform workspace list
+
+terraform workspace delete dev
+
+# Default workspace cannot be deleted.
+# The following command will show the error: default cannot be deleted.
+terraform workspace delete default
