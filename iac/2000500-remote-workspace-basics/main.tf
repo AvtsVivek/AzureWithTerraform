@@ -7,10 +7,18 @@ terraform {
     azurerm = {
       source  = "hashicorp/azurerm" # https://registry.terraform.io/providers/hashicorp/azurerm/latest
       version = "~>3.0"
-      # version = "2.85.0"
     }
   }
+
+  # Terraform State Storage to Azure Storage Container
+  backend "azurerm" {
+    resource_group_name  = "storage-rg"
+    storage_account_name = "tfstatetrial"
+    container_name       = "tfstatefiles"
+    key                  = "terraform-ws.tfstate"
+  }
 }
+
 
 provider "azurerm" {
   features {
