@@ -1,6 +1,6 @@
 
 # cd into the directory.
-cd ./iac/2000100-workspace
+cd ./iac/2000100-workspace-basics
 
 cd ..\..
 
@@ -31,3 +31,6 @@ terraform workspace delete dev-2
 terraform workspace list
 
 terraform workspace show
+
+terraform init
+
