@@ -33,12 +33,3 @@ resource "random_string" "resource_code" {
 output "resource_code" {
   value = random_string.resource_code.result
 }
-
-# resource "random_id" "my_id" {
-#   byte_length = 8
-# }
-
-# # full object
-# output "my_id" {
-#   value = random_id.my_id
-# }
