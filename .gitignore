@@ -41,3 +41,7 @@ ssh-keys/
 
 provisioner-output.txt
 
+local-exec-output-files/*
+
+local-exec-output-files/
+
