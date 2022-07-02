@@ -1,11 +1,17 @@
 
-cd iac\2100220-provisioner-null-resource-map
+cd iac\2100100-null-resource-vars-output
 
 cd ..\..
 
 # Terraform follows, the following workflow.
 
 # Init, Plan, Validate, Apply, and then Destroy
+
+terraform console
+
+type(var.some_var)
+
+exit
 
 terraform init
 

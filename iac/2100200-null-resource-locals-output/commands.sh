@@ -1,5 +1,5 @@
 
-cd iac\2100210-provisioner-null-resource-simple
+cd iac\2100200-null-resource-locals-output
 
 cd ..\..
 
@@ -31,9 +31,9 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
+# The following command is not working.
+terraform state show null_resource.null_resource_simple["item1"]
 terraform state show null_resource.null_resource_simple
-
-terraform state show null_resource.cluster
 
 terraform plan -destroy -out main.destroy.tfplan
 

@@ -1,5 +1,5 @@
 
-cd iac\2100200-provisioner-null-resource
+cd iac\2200100-provisioner-random-examples
 
 cd ..\..
 
@@ -24,14 +24,16 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
-# Apply the plan. Then observe the output text file.
+# Apply the plan. Then observe the Random string is generated. The string is .....
 terraform apply main.tfplan
 
 terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform state show null_resource.cluster
+terraform state show random_string.resource_code
+
+terraform state show 
 
 terraform plan -destroy -out main.destroy.tfplan
 

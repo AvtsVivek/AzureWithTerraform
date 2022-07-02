@@ -1,5 +1,5 @@
 
-cd iac\2100100-provisioner-random-examples
+cd iac\2200220-provisioner-null-resource-map
 
 cd ..\..
 
@@ -31,9 +31,9 @@ terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform state show random_string.resource_code
-
-terraform state show 
+# The following command is not working.
+terraform state show null_resource.null_resource_simple["item1"]
+terraform state show null_resource.null_resource_simple
 
 terraform plan -destroy -out main.destroy.tfplan
 
