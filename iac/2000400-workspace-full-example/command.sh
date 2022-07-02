@@ -10,6 +10,8 @@ mkdir ssh-keys
 cd ssh-keys
 
 # Execute the following command to create a new SSH key:
+# You need to use git bash for this.
+# For the file name use terraform-azure
 ssh-keygen
 
 terraform init
