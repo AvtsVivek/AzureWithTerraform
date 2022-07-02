@@ -1,5 +1,5 @@
 
-cd iac\2100200-provisioner-with-simple-rg
+cd iac\2100300-provisioner-with-simple-rg
 
 cd ..\..
 
