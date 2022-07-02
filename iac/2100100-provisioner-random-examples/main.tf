@@ -24,8 +24,8 @@ resource "random_string" "resource_code" {
   }
 
   provisioner "local-exec" {
-    when        = create
-    command     = "echo Random string is created. The string is ${self.result} "
+    when    = create
+    command = "echo Random string is created. The string is ${self.result} "
     # interpreter = ["PowerShell", "-Command"]
   }
 }
