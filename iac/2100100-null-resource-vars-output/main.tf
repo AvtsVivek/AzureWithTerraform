@@ -19,6 +19,7 @@ resource "null_resource" "null_resource_simple" {
   for_each = var.some_var
   # provisioner "local-exec" {
   #   command = "echo ${each.key} ${each.value.name1} ${each.value.name2}"
+  #   working_dir = "local-exec-output-files/"
   # }
 }
 

@@ -23,5 +23,6 @@ resource "null_resource" "cluster" {
     when        = create
     command     = "Get-Date > provisioner-output.txt"
     interpreter = ["PowerShell", "-Command"]
+    working_dir = "local-exec-output-files/"
   }
 }

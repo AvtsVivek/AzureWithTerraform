@@ -30,17 +30,20 @@ resource "azurerm_resource_group" "rg" {
   provisioner "local-exec" {
     when    = create
     command = "echo 'Hello from Terraform!'. Your resource group is created! ${self.name} at location ${self.location}"
+    working_dir = "local-exec-output-files/"
   }
 
   provisioner "local-exec" {
     when    = create
     command = "echo 'Hello from Terraform!'. Your resource group is created! ${self.name} at location ${self.location} > provisioner-output.txt"
+    working_dir = "local-exec-output-files/"
   }
 
   provisioner "local-exec" {
     when        = create
     command     = "Get-Date > provisioner-output.txt"
     interpreter = ["PowerShell", "-Command"]
+    working_dir = "local-exec-output-files/"
   }
 
 }

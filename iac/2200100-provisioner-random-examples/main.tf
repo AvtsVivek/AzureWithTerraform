@@ -21,12 +21,14 @@ resource "random_string" "resource_code" {
     # command = "VM Host name: ${self.length}"
     command     = "Get-Date > provisioner-output.txt"
     interpreter = ["PowerShell", "-Command"]
+    working_dir = "local-exec-output-files/"
   }
 
   provisioner "local-exec" {
     when    = create
     command = "echo Random string is created. The string is ${self.result} "
     # interpreter = ["PowerShell", "-Command"]
+    working_dir = "local-exec-output-files/"
   }
 }
 
