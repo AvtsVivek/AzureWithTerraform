@@ -33,7 +33,7 @@ terraform apply main.tfplan
 # get the ip address of the vms. Also browse the following link to see the status of the vms:
 # app1/index.html and also app1/metadata.html
 # Now run the command. Run this on git bash.
-# ssh -i ssh-keys/terraform-azure.pem azureuser@20.127.3.176
+# ssh -i ssh-keys/terraform-azure.pem azureuser@20.228.147.151
 # Now you should be logged in. 
 
 # Look for creation-time.txt inside of local-exec-output-files

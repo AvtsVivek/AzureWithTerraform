@@ -33,10 +33,47 @@ terraform apply main.tfplan
 # get the ip address of the vms. Also browse the following link to see the status of the vms:
 # app1/index.html and also app1/metadata.html
 # Now run the command. Run this on git bash.
-# ssh -i ssh-keys/terraform-azure.pem azureuser@20.228.146.41
+# ssh -i ssh-keys/terraform-azure.pem azureuser@20.232.160.252
 # Now you should be logged in. 
 
-# Look for creation-time.txt inside of local-exec-output-files
+cd /tmp
+
+cd /var/www/html
+
+ls -lrt
+
+cd app1
+
+ls -lrt
+
+# You should now see the following 4 files. 
+
+# -rw-r--r--. 1 root root  192 Jul  2 14:22 index.html
+# -rw-r--r--. 1 root root   19 Jul  2 14:24 app1-file2.html
+# -rw-r--r--. 1 root root   23 Jul  2 14:24 app1-file1.html
+# -rw-r--r--. 1 root root 2505 Jul  2 14:25 metadata.html
+
+# Now grab the public ip(or dns name) of the machine and access the files as follows.
+
+http://20.232.160.252/app1/app1-file1.html
+http://20.232.160.252/app1/app1-file2.html
+
+# Now make some modifications to app1 folder. Like adding a new file, or changing the contents of the existing file.
+
+# Now run the following commands.
+
+terraform plan -out main.tfplan
+
+# Review the plan.
+terraform show main.tfplan
+
+terraform apply main.tfplan
+
+# Now grab the public ip(or dns name) of the machine and access the files as follows.
+http://20.232.160.252/app1/app1-file1.html
+http://20.232.160.252/app1/app1-file2.html
+
+# Now you should see the changes.
 
 terraform state list
 
