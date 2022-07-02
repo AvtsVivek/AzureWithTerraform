@@ -1,5 +1,5 @@
 
-cd ./iac/2200400-workspace-full-example
+cd ./iac/2200400-file-provisioner-full-example
 
 cd ../..
 
