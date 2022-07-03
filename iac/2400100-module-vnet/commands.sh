@@ -1,9 +1,11 @@
 
-cd iac\2400100-module
+cd iac\2400100-module-vnet
 
 cd ..\..
 
 cd ..\..\..
+
+code . -r
 
 terraform fmt
 
