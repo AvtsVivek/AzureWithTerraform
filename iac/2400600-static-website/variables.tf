@@ -32,3 +32,8 @@ variable "static_website_error_404_document" {
   type        = string
 }
 
+variable "static_files_list" {
+  default     = ["error.html", "index.html"]
+  description = "Static file list."
+}
+
