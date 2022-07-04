@@ -116,3 +116,5 @@ Get-AzResourceGroup
     
     
 
+rm -rf .terraform*
+rm -rf terraform.tfstate*

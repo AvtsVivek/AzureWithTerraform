@@ -1,4 +1,4 @@
-Follow the steps to create a static website.
+Follow the steps to create a static website manually.
 
 1. First creat a resource group and inside of it, create a storage account.
 
