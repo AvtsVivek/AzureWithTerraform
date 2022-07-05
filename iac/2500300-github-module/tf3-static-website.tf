@@ -2,9 +2,12 @@
 
 module "azure_static_website" {
 
+  # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
   # You can use, this or the following.
-  source = "github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic"
+  # source = "github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic"
   # source = "git@github.com:AvtsVivek/terraform-azurerm-staticwebstitepublic.git"
+  # source = "git::https://github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic.git"
+  source = "git::https://github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic.git?ref=2.0.0"
 
   # version = "1.0.0"
   # Resource Group
