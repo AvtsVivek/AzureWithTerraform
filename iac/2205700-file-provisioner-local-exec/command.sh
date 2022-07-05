@@ -1,5 +1,5 @@
 
-cd ./iac/2200600-file-provisioner-remote-exec
+cd ./iac/2205700-file-provisioner-local-exec
 
 cd ../..
 
@@ -20,37 +20,23 @@ terraform fmt # formats the tf files.
 
 terraform validate
 
+# Ensure that a folder with name is local-exec-output-files is created.
+
 terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
 terraform apply main.tfplan
 
-# Now the command should be is successful.
 # Now, once the vms are provisioned
 # Ensure that the vm is created and running. Get the ip address assigned. In this case its 20.198.64.249
 # get the ip address of the vms. Also browse the following link to see the status of the vms:
 # app1/index.html and also app1/metadata.html
 # Now run the command. Run this on git bash.
-# ssh -i ssh-keys/terraform-azure.pem azureuser@20.127.3.176
+# ssh -i ssh-keys/terraform-azure.pem azureuser@20.228.147.151
 # Now you should be logged in. 
 
-# From the virtual machine, you can run the following command 
-# Look for "/var/www/html/file-copy.html"
-cd /var/www/html
-# Look for file-copy.html
-ls -lrt
-
-exit
-
-# Now get the ip and browse to it as follows.
-http://20.127.3.176/
-
-# Next browse to 
-http://20.127.3.176/file-copy.html
-
-# You should see
-# Simple file copy using Terraform File Provisioner
+# Look for creation-time.txt inside of local-exec-output-files
 
 terraform state list
 
@@ -68,5 +54,7 @@ terraform plan -destroy -out main.destroy.tfplan
 terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
+
+# Look for destroy-time.txt inside of local-exec-output-files
 
 

@@ -1,5 +1,5 @@
 
-cd ./iac/2200400-file-provisioner-full-example
+cd ./iac/2205600-file-provisioner-remote-exec
 
 cd ../..
 
@@ -26,36 +26,37 @@ terraform show main.tfplan
 
 terraform apply main.tfplan
 
-# Once the vms are provisioned
+# Now the command should be is successful.
+# Now, once the vms are provisioned
 # Ensure that the vm is created and running. Get the ip address assigned. In this case its 20.198.64.249
 # get the ip address of the vms. Also browse the following link to see the status of the vms:
 # app1/index.html and also app1/metadata.html
 # Now run the command. Run this on git bash.
-# ssh -i ssh-keys/terraform-azure.pem azureuser@52.249.185.140
+# ssh -i ssh-keys/terraform-azure.pem azureuser@20.127.3.176
 # Now you should be logged in. 
-# Verify the folders, cd /var/www/html. This should contain app1 folder and the file index.html
 
 # From the virtual machine, you can run the following command 
-cd /tmp
-
-ls -lrt
-
-# First observer file-copy.html. This file is copied from the local machine to the virtual machine.
-# Then observe fle.log
-cat file.log
-
-# now cd into app1
-cd app1
-
+# Look for "/var/www/html/file-copy.html"
+cd /var/www/html
+# Look for file-copy.html
 ls -lrt
 
 exit
+
+# Now get the ip and browse to it as follows.
+http://20.127.3.176/
+
+# Next browse to 
+http://20.127.3.176/file-copy.html
+
+# You should see
+# Simple file copy using Terraform File Provisioner
 
 terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
-terraform state show 
+terraform state show azurerm_linux_virtual_machine.mylinuxvm
 
 terraform output
 
