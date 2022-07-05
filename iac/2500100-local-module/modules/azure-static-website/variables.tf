@@ -35,5 +35,14 @@ variable "static_website_error_404_document" {
 variable "static_files_list" {
   default     = ["error.html", "index.html"]
   description = "Static file list."
+  type        = list(string) # list of strings
+  /*
+
+tuple([    
+    string,
+    string,
+])
+
+  */
 }
 

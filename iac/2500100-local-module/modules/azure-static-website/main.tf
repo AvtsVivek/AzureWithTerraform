@@ -67,6 +67,3 @@ resource "azurerm_storage_blob" "static_files_html" {
   ]
 
 }
-
-
-
