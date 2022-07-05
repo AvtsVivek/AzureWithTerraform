@@ -7,6 +7,8 @@ terraform fmt
 
 terraform init
 
+# Now verify the .terraform directory. Inside it, there should be a modules folder. And then inside of it azure_static_website.
+
 terraform validate
 
 terraform plan -out main.tfplan

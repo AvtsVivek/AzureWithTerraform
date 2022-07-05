@@ -1,8 +1,11 @@
 # Call our Custom Terraform Module which we built earlier
 
 module "azure_static_website" {
-  # source = "./modules/azure-static-website" # Mandatory
-  source  = "https://github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic"
+
+  # You can use, this or the following.
+  source = "github.com/AvtsVivek/terraform-azurerm-staticwebstitepublic"
+  # source = "git@github.com:AvtsVivek/terraform-azurerm-staticwebstitepublic.git"
+
   # version = "1.0.0"
   # Resource Group
   location            = "eastus"
