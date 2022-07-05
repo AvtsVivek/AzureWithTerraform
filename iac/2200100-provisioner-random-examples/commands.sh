@@ -24,7 +24,8 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
-# Apply the plan. Then observe the Random string is generated. The string is .....
+# Apply the plan. But first ensure a folder with name local-exec-output-files is present.
+# Then observe the output text file.
 terraform apply main.tfplan
 
 terraform state list

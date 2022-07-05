@@ -24,7 +24,8 @@ terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
-# Apply the plan. Then observe the output text file.
+# Apply the plan. But first ensure a folder with name local-exec-output-files is present.
+# Then observe the output text file.
 terraform apply main.tfplan
 
 terraform state list
