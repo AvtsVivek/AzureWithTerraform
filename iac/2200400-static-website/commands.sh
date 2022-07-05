@@ -2,7 +2,7 @@
 # Used this in the github issue 
 # https://github.com/hashicorp/terraform-provider-azurerm/issues/15048
 
-cd iac\2400600-static-website
+cd iac\2200400-static-website
 
 cd ..\..
 
