@@ -51,7 +51,56 @@
 ![Auth to Github](./InstructionImages/InstallTerraformCloud.jpg)
 
 
+- Configure Settings. Give a name to workspace. Set the Terraform working directory. Let the other options be default. Click on Create Workspace.
+
+![Auth to Github](./InstructionImages/ConfigureSettings.jpg)
 
 
+- Once the organization and workspace is created, go to settings of the organization(not the settings of workspace), then plan and billing.
+
+![Change plan for the org](./InstructionImages/TerraformChangePlans.jpg)
+
+
+- Change plan and select trial.
+
+![Change plan for the org](./InstructionImages/SelectTrialPlan.jpg)
+
+- Select trial plan and click on start your free trial at the bottom.
+
+- Now for your workspace, add environment variables. 
+
+![Variables to workspace](./InstructionImages/VariablesToWorkspace.jpg)
+
+
+- Add Variables to workspace as follows.
+
+First create a service principal. Then verify on the portal.
+
+```t
+
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/12b01360-f122-4223-bcf0-b1704509de3c"
+
+```
+
+![Variables to workspace](./InstructionImages/SpActiveDirectoryAppRegistrations.jpg)
+
+- Now add the variables to workspace.
+
+```t
+{
+  "appId": "2ff1a447-4680-4088-9686-35544h7zf124",
+  "displayName": "vivek-terraform-sp-hcta",
+  "password": "XgI8Q~mCg~DIFYJ~PIghq9ElFuMFsrEiul8dWa18",
+  "tenant": "f6cd31b7-3fd3-476c-95dd-c41f67b5fa40"
+}
+
+ARM_CLIENT_ID="2ff1a447-4680-4088-9686-35544h7zf124"
+ARM_CLIENT_SECRET="XgI8Q~mCg~DIFYJ~PIghq9ElFuMFsrEiul8dWa18"
+ARM_SUBSCRIPTION_ID="12b01360-f122-4223-bcf0-b1704509de3c"
+ARM_TENANT_ID="f6cd31b7-3fd3-476c-95dd-c41f67b5fa40"
+
+```
+
+![Add Sensitive Vars to Workspace](./InstructionImages/EnvVarsToWorkspace.jpg)
 
 
