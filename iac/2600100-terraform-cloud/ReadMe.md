@@ -104,3 +104,17 @@ ARM_TENANT_ID="f6cd31b7-3fd3-476c-95dd-c41f67b5fa40"
 ![Add Sensitive Vars to Workspace](./InstructionImages/EnvVarsToWorkspace.jpg)
 
 
+- Start a Run .
+![Start a run](./InstructionImages/StartARun.jpg)
+
+- Now Run the workspace.
+![Start a run](./InstructionImages/RunWorkspace.jpg)
+
+
+- Destroy as follows.
+![Start a run](./InstructionImages/Destroy.jpg)
+
+
+- Delete app registrations as follows.
+![Delete App Reg](./InstructionImages/DeleteAppReg.jpg)
+
