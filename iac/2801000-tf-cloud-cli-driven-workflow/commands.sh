@@ -41,6 +41,9 @@ terraform plan -destroy
 terraform show main.destroy.tfplan
 
 # The following will not work.
+terraform show -destroy
+
+# The following will not work.
 terraform apply main.destroy.tfplan
 
 # The following should work.

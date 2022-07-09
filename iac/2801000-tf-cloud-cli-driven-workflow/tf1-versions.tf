@@ -1,12 +1,12 @@
 # Terraform Block
 terraform {
   required_version = ">= 1.0.0"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = ">= 3.0"
-    }
-  }
+  # required_providers {
+  #   azurerm = {
+  #     source  = "hashicorp/azurerm"
+  #     version = ">= 3.0"
+  #   }
+  # }
 
   # Update Terraform Cloud Backend Block Information below
   backend "remote" {
@@ -20,27 +20,7 @@ terraform {
 
 }
 
-# terraform {
-#   cloud {
-#     organization = "vivek-hcta-azure-demo1"
-
-#     workspaces {
-#       name = "cli-driven-terraform-azure-demo"
-#     }
-#   }
-# }
-
 # Provider Block
 provider "azurerm" {
   features {}
 }
-
-# terraform {
-#   cloud {
-#     organization = "vivek-hcta-azure-demo1"
-
-#     workspaces {
-#       name = "cli-driven-terraform-azure-demo"
-#     }
-#   }
-# }
