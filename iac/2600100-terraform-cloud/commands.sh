@@ -1,4 +1,6 @@
 
+cd .\iac\2600100-terraform-cloud
+
 cd .\terraform-manifests\
 
 cd ..\..
@@ -7,11 +9,10 @@ terraform fmt
 
 terraform init
 
-
 # Run the following in gitbash.
 # Give the name terraform-azure for key file
 
-cd terraform-manifests/ssh-keys
+cd terraform-manifests/ssh-keys-tf-cloud
 
 ssh-keygen
 

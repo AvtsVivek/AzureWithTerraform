@@ -88,18 +88,27 @@ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/12b01360-
 
 ```t
 {
-  "appId": "2ff1a447-4680-4088-9686-35544h7zf124",
-  "displayName": "vivek-terraform-sp-hcta",
-  "password": "XgI8Q~mCg~DIFYJ~PIghq9ElFuMFsrEiul8dWa18",
-  "tenant": "f6cd31b7-3fd3-476c-95dd-c41f67b5fa40"
+  "appId": "44b6dd03-f6a0-450a-9cec-d6df09767190",
+  "displayName": "tfvivl-terraform-sp-hcta",
+  "password": "70v8Q~yO-CJFlvboCYNcM1i2FQtvdHLxIJXWVbYR",
+  "tenant": "f6b411b7-3fd3-476c-95dd-c41f67b5fc30"
 }
 
-ARM_CLIENT_ID="2ff1a447-4680-4088-9686-35544h7zf124"
-ARM_CLIENT_SECRET="XgI8Q~mCg~DIFYJ~PIghq9ElFuMFsrEiul8dWa18"
+ARM_CLIENT_ID="44b6dd03-f6a0-450a-9cec-d6df09767190"
+ARM_CLIENT_SECRET="70v8Q~yO-CJFlvboCYNcM1i2FQtvdHLxIJXWVbYR"
 ARM_SUBSCRIPTION_ID="12b01360-f122-4223-bcf0-b1704509de3c"
-ARM_TENANT_ID="f6cd31b7-3fd3-476c-95dd-c41f67b5fa40"
+ARM_TENANT_ID="f6b411b7-3fd3-476c-95dd-c41f67b5fc30"
 
 ```
+
+
+Verify 
+
+az logout
+az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
+az login --service-principal -u 44b6dd03-f6a0-450a-9cec-d6df09767190 -p 70v8Q~yO-CJFlvboCYNcM1i2FQtvdHLxIJXWVbYR --tenant f6b411b7-3fd3-476c-95dd-c41f67b5fc30
+az account list-locations -o table
+az logout
 
 ![Add Sensitive Vars to Workspace](./InstructionImages/EnvVarsToWorkspace.jpg)
 
