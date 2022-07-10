@@ -2,7 +2,7 @@
 
 ## Summary
 
-- This exercise is a simple CLI driven workflow.
+- This exercise will make you familiar with the CLI driven workflow and how tfstate can be migrated.
 
 - The resources are created on Azure by Terraform. 
 
@@ -36,6 +36,10 @@ ARM_TENANT_ID="f6b411b7-3fd3-476c-95dd-c41f67b5fc30"
 ```
 
 ![Name and Description for Workspace](./Images/VariablesToWorkspace.jpg)
+
+- Ensure no tf state is present in the workspace.
+
+![No TfState in the workspace](./Images/NoTfState.jpg)
 
 - Now run the commands from teh commands.sh file.
 
