@@ -10,7 +10,7 @@
 
 ## Steps
 
-- Create a workspace on cloud as follows. Select Cli Driven Workflow as follows.
+- Inside of an terraform cloud Organization, Create a workspace as follows. Select Cli Driven Workflow.
 
 ![Create Workspace ](./Images/CliDrivenWorkflow.jpg)
 
@@ -18,8 +18,10 @@
 
 ![Name and Description for Workspace](./Images/NameAndDescriptionToWorkspace.jpg)
 
-- Add env vars to the workspace.
+- Add env vars to the workspace which will enable terraform to connect to Azure.
 
 
 ![Name and Description for Workspace](./Images/VariablesToWorkspace.jpg)
+
+- Now run the commands from teh commands.sh file.
 
