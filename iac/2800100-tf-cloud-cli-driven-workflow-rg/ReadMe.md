@@ -12,14 +12,14 @@
 
 - Create a workspace on cloud as follows. Select Cli Driven Workflow as follows.
 
-![Create Workspace ](./CliDrivenWorkflow.jpg)
+![Create Workspace ](./Images/CliDrivenWorkflow.jpg)
 
 - Give a namd and description .
 
-![Name and Description for Workspace](./NameAndDescriptionToWorkspace.jpg)
+![Name and Description for Workspace](./Images/NameAndDescriptionToWorkspace.jpg)
 
 - Add env vars to the workspace.
 
 
-![Name and Description for Workspace](./VariablesToWorkspace.jpg)
+![Name and Description for Workspace](./Images/VariablesToWorkspace.jpg)
 
