@@ -1,0 +1,2 @@
+hour = 13
+main = rule { hour >= 0 and hour < 12 }
