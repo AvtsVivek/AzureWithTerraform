@@ -4,6 +4,14 @@
 
 - These are picked up from [here](https://github.com/hashicorp/terraform-guides/tree/master/governance/third-generation).
 
+- References
+    1. https://www.cisecurity.org/
+
+    2. https://github.com/hashicorp/terraform-foundational-policies-library/tree/master/cis/azure/networking
+
+    3.
+
+
 - To use them, you first need to create organization on terraform cloud. Then go to planning and billing and change plan to trial
 
 ![Organization Free Trial](./Images/FreeTrialOfTfCloud.jpg)

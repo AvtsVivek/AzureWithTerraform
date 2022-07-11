@@ -33,7 +33,7 @@ ssh-keys/
 # .terraform.lock.hcl must be included in the version control. But the following does not work.
 # I raised a question on SO. https://stackoverflow.com/q/69954822/1977871
 !.terraform.lock.hcl
-
+!sentinel.hcl
 # working directory for web app
 /globo_web_app/*
 
