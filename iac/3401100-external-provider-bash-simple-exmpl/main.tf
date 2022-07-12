@@ -3,7 +3,7 @@ provider "azurerm" {
   features {}
 }
 
-data "external" "ssh_key_generator" {
+data "external" "simple-jq" {
   #program = ["bash", ".${path.module}/simple.sh"]
   program = ["bash", "./simple.sh"]
 
