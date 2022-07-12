@@ -1,5 +1,5 @@
 
-cd iac\3400300-external-provider-bash-simple-exmpl
+cd iac\3401100-external-provider-bash-simple-exmpl
 
 cd ..\..
 

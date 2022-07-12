@@ -4,8 +4,8 @@ provider "azurerm" {
 }
 
 data "external" "ssh_key_generator" {
-   #program = ["bash", ".${path.module}/simple.sh"]
-   program = ["bash", "./simple.sh"]
+  #program = ["bash", ".${path.module}/simple.sh"]
+  program = ["bash", "./simple.sh"]
 
   query = {
     key_name        = "terraformdemo"
