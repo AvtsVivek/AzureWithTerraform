@@ -6,3 +6,5 @@
 
 - The external provider in this case is bash script.
 
+- Use bash to run the commands inside of commands.sh. Powershell does not work. You will get errors as mentioned in the [stackoverflow question here](https://stackoverflow.com/q/72953037/1977871). 
+
