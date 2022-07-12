@@ -12,6 +12,9 @@ $env:TF_LOG_PATH="terraform-trace.log"
 $env:TF_LOG
 $env:TF_LOG_PATH
 
+# You can add it to the powershell profile file.
+$profile
+
 terraform fmt
 
 terraform init
