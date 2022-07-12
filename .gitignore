@@ -45,3 +45,4 @@ local-exec-output-files/*
 
 local-exec-output-files/
 
+*.log
