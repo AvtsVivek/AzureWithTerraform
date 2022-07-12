@@ -6,3 +6,5 @@
 
 - https://subscription.packtpub.com/book/cloud-and-networking/9781800207554/2/ch02lvl1sec18/querying-external-data-with-terraform
 
+- Referenced [stackoverflow issue here](https://stackoverflow.com/q/72953037/1977871)
+
