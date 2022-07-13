@@ -18,3 +18,8 @@ terraform plan
 terraform apply -auto-approve
 
 terraform plan --destroy
+
+# The following is not working.
+echo '{"key_name": "terraformdemo", "key_environment": "dev"}' | ./script-dir/ssh-key-gen.sh
+# But the following is working.
+echo '{"key_name": "terraformdemo", "key_environment": "dev"}' | ./script-dir/ssh-key-generator.sh

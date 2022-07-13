@@ -18,11 +18,26 @@ function parse_input() {
 }
 
 function produce_output() {
-  public_key_contents=$KEY_NAME
+  #public_key_contents=$KEY_NAME
+  public_key_file_name=$ssh_key_file.pub
+  # The following two are giving exactely the same problem. Not working.
+  public_key_contents_for_before_space=$(<$public_key_file_name)
+  public_key_contents_for_after_space=$(<$public_key_file_name) 
+  # public_key_contents=$(cat ${public_key_file_name})
+
+  # The following is working, but it's not what we want.
+  # For now this seems to be the only option.
+  public_key_contents_before_space=$(echo $public_key_contents_for_before_space | sed 's/ ^.*//')
+  public_key_contents_after_space=$(echo $public_key_contents_for_after_space | sed 's/^.* //') 
+  #public_key_contents=$public_key_contents_before_space
+  public_key_contents=$public_key_contents_after_space
   #public_key_contents=$(cat ${ssh_key_file}.pub)
   # echo "DEBUG: public_key_contents ${public_key_contents}" 1>&2
+  # The following is not working.
+  # private_key_contents=$(cat ${ssh_key_file} | awk '$1=$1' ORS='  \n')
+  # So use the following.
   private_key_contents=$KEY_NAME
-  #private_key_contents=$(cat ${ssh_key_file} | awk '$1=$1' ORS='  \n')
+
 
   jq -n \
   --arg name $KEY_NAME \
@@ -31,7 +46,8 @@ function produce_output() {
   --arg environment $KEY_ENVIRONMENT \
   --arg ssh_key_file $ssh_key_file \
   --arg script_dir $script_dir \
-  '{"name":$name, "public_key_contents":$public_key_contents, "private_key_contents":$private_key_contents, "environment":$environment, "ssh_key_file":$ssh_key_file, "script_dir":$script_dir }'
+  --arg public_key_file_name $public_key_file_name \
+  '{"name":$name, "public_key_contents":$public_key_contents, "private_key_contents":$private_key_contents, "environment":$environment, "ssh_key_file":$ssh_key_file, "script_dir":$script_dir, "public_key_file_name": $public_key_file_name }'
 }
 
 function create_ssh_key() {
