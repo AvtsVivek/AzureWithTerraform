@@ -1,33 +1,63 @@
 
-cd .\iac\3401300-external-provider-vm
+cd iac/3401300-external-provider-vm
 
-cd .\terraform-manifests\
+cd ../..
 
-cd ..\..
+cd ..
+
+cd ./terraform-manifests
 
 terraform fmt
-
-terraform logout
-
-terraform login
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
 
 terraform init
 
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+
 terraform validate
+
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+
 
 terraform plan -out main.tfplan
 
-terraform plan 
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+# Run the following commands in bash. They would not work in powershell.
+
 
 terraform apply main.tfplan
 
-# The following does not work
+    # Ensure that the vm is created and running. Get the ip address assigned. In this case its 13.72.114.178
+    # Now run the command
+    # ssh -i script-dir/terraformdemo-dev.sshkeys azureuser@13.72.114.178
+    # Now you should be logged in. 
+    # Verify the folders, cd /var/www/html. This should contain app1 folder and the file index.html
+    # 
+    # 
+    # Browse the following.
+    # http://13.72.114.178
+    # http://13.72.114.178/app1/index.html
+    # http://13.72.114.178/app1/metadata.html
+    # 
+    # Also go to the ip address resource that got created. It should have an dns name that looks something like this app1-vm-autqly.centralindia.cloudapp.azure.com.
+    # 
+    # app1-vm-autqly.centralindia.cloudapp.azure.com
+    # app1-vm-autqly.centralindia.cloudapp.azure.com/app1/index.html
+    # app1-vm-autqly.centralindia.cloudapp.azure.com/app1/metadata.html
+
+    
+    
+exit
+
 terraform plan -destroy -out main.destroy.tfplan
 
-# So run this.
-terraform plan -destroy
-
-# The following does not work
 terraform show main.destroy.tfplan
 
 # The following does not work

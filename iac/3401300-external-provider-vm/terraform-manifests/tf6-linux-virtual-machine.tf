@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "mylinuxvm" {
   admin_username        = "azureuser"
   network_interface_ids = [azurerm_network_interface.myvmnic.id]
   admin_ssh_key {
-    username   = "azureuser"
+    username = "azureuser"
     # public_key = file("${path.module}/ssh-keys-tf-cloud/terraform-azure.cloudpub")
     public_key = data.external.simple-jq-test.result.public_key_contents
   }
