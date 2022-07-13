@@ -7,6 +7,8 @@ terraform fmt
 
 terraform init
 
+code . -r
+
 terraform validate
 
 terraform plan -out main.tfplan

@@ -1,9 +1,19 @@
 
-cd iac\800500-multiple-vms-linux
+cd iac/800500-multiple-vms-linux
+
+cd ..\..
 
 terraform fmt
 
 terraform init
+
+mkdir ssh-keys
+
+cd ssh-keys
+
+# Run the followng in bash prompt
+# terraform-azure
+ssh-keygen 
 
 terraform validate
 
