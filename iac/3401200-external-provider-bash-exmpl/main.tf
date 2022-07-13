@@ -5,7 +5,7 @@ provider "azurerm" {
 
 data "external" "simple-jq-test" {
 
-  program = ["bash", "./ssh-key-gen.sh"]
+  program = ["bash", "./script-dir/ssh-key-gen.sh"]
 
   query = {
     key_name        = "terraformdemo"
