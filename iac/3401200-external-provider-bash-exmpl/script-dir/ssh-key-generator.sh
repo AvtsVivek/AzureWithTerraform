@@ -27,7 +27,6 @@ function create_ssh_key() {
   export ssh_key_file="${script_dir}/${KEY_NAME}-${KEY_ENVIRONMENT}.sshkeys"
   # echo "DEBUG: ssh_key_file = ${ssh_key_file}" 1>&2
   if [[ ! -f "${ssh_key_file}" ]]; then
-    #ssh-keygen -m PEM -t rsa -b 4096 -N '' -f $ssh_key_file
     ssh-keygen -q -m PEM -t rsa -b 4096 -N '' -f $ssh_key_file
   fi
 }
