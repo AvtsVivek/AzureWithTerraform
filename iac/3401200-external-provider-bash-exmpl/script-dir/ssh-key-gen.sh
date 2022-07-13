@@ -36,7 +36,7 @@ function produce_output() {
 
 function create_ssh_key() {
   script_dir=$(dirname $0)
-  export ssh_key_file="${script_dir}/${KEY_NAME}-${KEY_ENVIRONMENT}"
+  export ssh_key_file="${script_dir}/${KEY_NAME}-${KEY_ENVIRONMENT}.sshkeys"
   # echo "DEBUG: ssh_key_file = ${ssh_key_file}" 1>&2
   if [[ ! -f "${ssh_key_file}" ]]; then
     ssh-keygen -q -m PEM -t rsa -b 4096 -N '' -f $ssh_key_file

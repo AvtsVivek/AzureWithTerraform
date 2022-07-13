@@ -46,3 +46,5 @@ local-exec-output-files/*
 local-exec-output-files/
 
 *.log
+
+terraformdemo-dev.sshkeys
