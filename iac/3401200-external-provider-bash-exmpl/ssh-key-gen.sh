@@ -30,7 +30,8 @@ function produce_output() {
   --arg private_key_contents $private_key_contents \
   --arg environment $KEY_ENVIRONMENT \
   --arg ssh_key_file $ssh_key_file \
-  '{"name":$name, "public_key_contents":$public_key_contents, "private_key_contents":$private_key_contents, "environment":$environment, "ssh_key_file":$ssh_key_file}'
+  --arg script_dir $script_dir \
+  '{"name":$name, "public_key_contents":$public_key_contents, "private_key_contents":$private_key_contents, "environment":$environment, "ssh_key_file":$ssh_key_file, "script_dir":$script_dir }'
 }
 
 function create_ssh_key() {

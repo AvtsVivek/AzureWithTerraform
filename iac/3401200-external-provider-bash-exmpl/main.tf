@@ -13,18 +13,22 @@ data "external" "simple-jq-test" {
   }
 }
 
-output "locationname" {
+output "name" {
   value = data.external.simple-jq-test.result.name
 }
 
-output "locationname1" {
+output "public_key_contents" {
   value = data.external.simple-jq-test.result.public_key_contents
 }
 
-output "locationname2" {
+output "environment" {
   value = data.external.simple-jq-test.result.environment
 }
 
-output "locationname4" {
+output "ssh_key_file" {
   value = data.external.simple-jq-test.result.ssh_key_file
+}
+
+output "script_dir" {
+  value = data.external.simple-jq-test.result.script_dir
 }
