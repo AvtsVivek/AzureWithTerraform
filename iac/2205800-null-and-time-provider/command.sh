@@ -20,13 +20,21 @@ terraform fmt # formats the tf files.
 
 terraform validate
 
-# Ensure that a folder with name is local-exec-output-files is created.
+# Just ensure, we are starting from a clean state.
+terraform plan -destroy -out main.destroy.tfplan
 
+terraform show main.destroy.tfplan
+
+terraform apply main.destroy.tfplan
+
+# Ensure that a folder with name is local-exec-output-files is created.
 terraform plan -out main.tfplan
 
 terraform show main.tfplan
 
 terraform apply main.tfplan
+
+terraform state list
 
 # Now, once the vms are provisioned
 # Ensure that the vm is created and running. Get the ip address assigned. In this case its 20.198.64.249
@@ -35,6 +43,8 @@ terraform apply main.tfplan
 # Now run the command. Run this on git bash.
 # ssh -i ssh-keys/terraform-azure.pem azureuser@20.232.160.252
 # Now you should be logged in. 
+
+terraform state show null_resource.sync_app1_static
 
 cd /tmp
 
@@ -63,8 +73,9 @@ http://20.232.160.252/app1/app1-file2.html
 # Now run the following commands.
 
 terraform plan -out main.tfplan
-
+# Observe the plan. null_resource.sync_app1_static must be replaced
 # Review the plan.
+
 terraform show main.tfplan
 
 terraform apply main.tfplan
