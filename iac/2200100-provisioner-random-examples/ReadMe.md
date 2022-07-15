@@ -1,0 +1,1 @@
+# This demonistrates random_string and random_id with provisioner.
