@@ -22,6 +22,9 @@ variable "environment_name" {
 }
 
 data "external" "getlocation" {
+  
+  # may be we should use path.module like this.
+  # program = ["Powershell.exe", "${path.module}/ps-script/GetLocation.ps1"]
   program = ["Powershell.exe", "./ps-script/GetLocation.ps1"]
 
   query = {

@@ -40,6 +40,8 @@ resource "azurerm_resource_group" "rg" {
 
 
 data "external" "getlocation" {
+  # may be we should use path.module like this.
+  # program = ["Powershell.exe", "${path.module}/ps-script/GetLocation.ps1"]
   program = ["Powershell.exe", "./ps-scripts/GetLocation.ps1"]
 
   query = {

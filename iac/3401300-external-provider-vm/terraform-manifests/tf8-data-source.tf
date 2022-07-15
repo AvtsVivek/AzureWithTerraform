@@ -1,7 +1,8 @@
 
 data "external" "simple-jq-test" {
 
-  # program = ["bash", "./script-dir/ssh-key-gen.sh"]
+  # may be we should use path.module like this.
+  # program = ["bash", "${path.module}/script-dir/ssh-key-gen.sh"]
   program = ["bash", "${path.module}/script-dir/ssh-key-gen.sh"]
 
   query = {

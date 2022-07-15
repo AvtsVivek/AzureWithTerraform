@@ -5,6 +5,8 @@ provider "azurerm" {
 
 data "external" "simple-jq-test" {
 
+# may be we should use path.module like this.
+  # program = ["bash", "${path.module}/simple.sh"]
   program = ["bash", "./simple.sh"]
 
 }

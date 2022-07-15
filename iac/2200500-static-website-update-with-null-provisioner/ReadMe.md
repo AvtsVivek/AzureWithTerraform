@@ -1,4 +1,4 @@
-This is currently in complete.
+This is currently incomplete.
 I dont know how to upload a file to Azure blob storage or storage account using null resource.
 
 I raised a question here on stack over flow. Lets wait and see.
