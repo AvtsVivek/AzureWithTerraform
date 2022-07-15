@@ -4,9 +4,9 @@ terraform {
 
 resource "null_resource" "null_resource_simple" {
 
-  # triggers = {
-  #   always-update = timestamp()
-  # }
+  triggers = {
+    always-update = timestamp()
+  }
 
   provisioner "local-exec" {
     when        = create

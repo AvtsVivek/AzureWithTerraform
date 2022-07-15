@@ -14,7 +14,6 @@ terraform fmt # formats the tf files.
 terraform validate
 
 # First ensure that the resources are deleted, if there are any.
-
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
@@ -22,23 +21,29 @@ terraform apply main.destroy.tfplan
 # Now we can plan and apply the resources.
 terraform plan -out main.tfplan
 
-terraform show main.tfplan
-
-# Apply the plan. 
+# Apply the plan. Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
 terraform apply main.tfplan
 
 # Do this once again. Review the plan. 
-# It will say, null_resource.null_resource_simple must be replaced 
+# You will see the following.
+# No changes. Your infrastructure matches the configuration.
 terraform plan -out main.tfplan
 
-# Apply the plan. Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
+# Apply the plan. 
+# You will see the following.
+# Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+# Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
+# The time should NOT change
 terraform apply main.tfplan
 
 # Yet again.
-# It will say, null_resource.null_resource_simple must be replaced 
+# You will see the following.
+# No changes. Your infrastructure matches the configuration.
 terraform plan -out main.tfplan
 
 # Apply the plan. Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
+# Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
+# The time should NOT change
 terraform apply main.tfplan
 
 terraform state list
