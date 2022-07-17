@@ -19,4 +19,6 @@ type([1, 234]) # REturns tuple
 
 type([1, "234sdf"]) # REturns tuple
 
+type(local.web_vmnic_inbound_ports_map) # REturns object
+
 exit
