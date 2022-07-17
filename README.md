@@ -1,11 +1,11 @@
 # Step By Step Terraform Tutorial
 
 ## Useful for Preparation for Terraform Associate exam.
+I started as I was preparing for the Terraform Associate exam.
+Then I decided to make this a step by step tutorial.
 
 ## Give a Star! :star:
-If you like or are using this project to learn or start your solution, please give it a star. Thanks!
-
-
+If you like or found this useful, please give it a star. Thanks!
 
 ## Some useful commands
 
