@@ -1,21 +1,28 @@
-# Preparation for Terraform Associate exam.
+# Step By Step Terraform Tutorial
 
-## Step by Step examples.
+## Useful for Preparation for Terraform Associate exam.
 
-# Some useful commands
+## Give a Star! :star:
+If you like or are using this project to learn or start your solution, please give it a star. Thanks!
 
-az account show
 
-az account list
 
-az account set --subscription "Microsoft Azure Sponsorship"
+## Some useful commands
 
-az account set --subscription "Mewurk - DevTest"
+- az account show
 
- - The following needs to be used in azure powershell
-Get-AzResourceGroup
+- az account list
 
-Select-AzSubscription -SubscriptionName "Microsoft Azure Sponsorship"
+- az account set --subscription "Microsoft Azure Sponsorship"
 
-Get-AzResourceGroup
+- az account set --subscription "Mewurk - DevTest"
+
+## The following needs to be used in azure powershell
+
+- Get-AzResourceGroup
+
+- Select-AzSubscription -SubscriptionName "Microsoft Azure Sponsorship"
+
+- Get-AzResourceGroup
+
 
