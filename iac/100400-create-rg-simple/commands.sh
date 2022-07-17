@@ -1,13 +1,15 @@
 
-cd iac\100081-random-examples
+cd ..\..
 
-# Terraform follows, the following workflow.
+cd iac\100400-create-rg-simple
 
-# Init, Plan, Validate, Apply, and then Destroy
+cd ..\..
+
+terraform fmt
 
 terraform init
 
-terraform fmt # formats the tf files.
+code . -r
 
 terraform validate
 
@@ -22,6 +24,8 @@ terraform state list
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
 terraform state show 
+
+terraform show terraform.tfstate
 
 terraform plan -destroy -out main.destroy.tfplan
 
