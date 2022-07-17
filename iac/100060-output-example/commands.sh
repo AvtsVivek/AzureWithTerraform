@@ -1,4 +1,7 @@
 
+cd ../..
+
+# cd into the directory.
 cd iac\100060-output-example
 
 # Terraform follows, the following workflow.
@@ -10,6 +13,11 @@ terraform init
 terraform fmt # formats the tf files.
 
 terraform validate
+
+# Clear off the previous state, if any.
+terraform plan -destroy -out main.destroy.tfplan
+
+terraform apply main.destroy.tfplan
 
 terraform plan -out main.tfplan
 

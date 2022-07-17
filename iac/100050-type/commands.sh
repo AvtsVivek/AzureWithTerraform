@@ -1,8 +1,8 @@
 
+cd ../..
+
 # cd into the directory.
 cd ./iac/100050-type
-
-cd ../..
 
 terraform fmt
 
