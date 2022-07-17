@@ -16,3 +16,8 @@ output "print_the_var_names" {
 output "print_the_local_names" {
   value = [for name in local.local_user_names : name]
 }
+
+# The following is not working.
+# output "print_the_var_names_count" {
+#   value = var.var_user_names.count
+# }
