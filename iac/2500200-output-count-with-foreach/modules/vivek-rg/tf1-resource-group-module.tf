@@ -4,8 +4,7 @@ variable "some_prop" {
 
 resource "azurerm_resource_group" "myrg" {
   for_each = var.some_prop
-  # name     = var.resource_group_name 
-  name     = "var.resource_group_name-${each.value}-${var.resource_group_count_var}" # "vivek-${each.value}-toset-rg"
+  name     = "var.resource_group_name-${each.key}-${each.value}-${var.resource_group_count_var}"
   location = var.resource_group_location
 }
 
