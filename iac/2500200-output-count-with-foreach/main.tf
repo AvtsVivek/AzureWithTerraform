@@ -38,3 +38,7 @@ module "azure_resource_group_vivek_rg" {
   resource_group_count_var = count.index
 }
 
+output "resource_group_name_list" {
+  value = module.azure_resource_group_vivek_rg
+}
+

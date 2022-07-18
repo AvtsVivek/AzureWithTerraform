@@ -23,9 +23,10 @@ variable "resource_group_count_var" {
   type        = number
 }
 
-# Not very clear how to output all of the resource groups that are created.
-# The following is not working.
+output "resource_group_name_list" {
+  value = [for vm in azurerm_resource_group.myrg: vm.name]
+}
 
-# output "name_of_resource_group" {
-#   value = azurerm_resource_group.myrg[*].name
-# }
+output "resource_group_name_id" {
+  value = [for vm in azurerm_resource_group.myrg: vm.id]
+}
