@@ -1,3 +1,4 @@
+cd ../..
 
 cd ./iac/1400500-output-foreach-console-two-input-vars
 
@@ -13,6 +14,14 @@ var.fruits
 element(["apple", "banana", "pine apple", "grape", "strawberry"], 0)
 element(var.fruits, 0)
 element(var.fruits, 1)
+
+index(["apple", "banana", "pine apple", "grape", "strawberry"], "apple")
+
+index(["apple", "banana", "pine apple", "grape", "strawberry"], "banana")
+
+index(["apple", "banana", "pine apple", "grape", "strawberry"], "pine apple")
+
+index(["apple", "banana", "pine apple", "grape", "strawberry"], "jackfruit") # This will return an error.
 
 # length function. Gives the number of elements in the list
 length(var.fruits)
