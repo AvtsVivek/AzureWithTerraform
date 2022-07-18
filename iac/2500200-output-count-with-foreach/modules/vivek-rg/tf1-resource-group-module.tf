@@ -23,3 +23,10 @@ variable "resource_group_count_var" {
   description = "The count variable for the resource group"
   type        = number
 }
+
+# Not very clear how to output all of the resource groups that are created.
+# The following is not working.
+
+# output "name_of_resource_group" {
+#   value = azurerm_resource_group.myrg[*].name
+# }
