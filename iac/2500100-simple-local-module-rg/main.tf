@@ -23,4 +23,10 @@ module "azure_resource_group_vivek_rg" {
   resource_group_name     = "myrg1"
 }
 
+output "name_of_resource_group" {
+  value = module.azure_resource_group_vivek_rg.name_of_resource_group
+}
+
+
+
 

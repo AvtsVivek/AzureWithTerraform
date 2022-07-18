@@ -13,3 +13,9 @@ variable "resource_group_location" {
   description = "The locaton of the resource group"
   type        = string
 }
+
+output "name_of_resource_group" {
+  value = azurerm_resource_group.rg.name
+}
+  
+
