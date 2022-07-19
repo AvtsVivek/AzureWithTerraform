@@ -18,7 +18,7 @@ terraform init
 # Do not run this validate command now. It will fail.
 terraform validate
 
-terraform import azurerm_resource_group.rg /subscriptions/21801l50-f7g2-4223-bcf0-bb704sr9ded8/resourceGroups/import-terraform-simple-rg
+terraform import azurerm_resource_group.rg /subscriptions/12b01360-f122-4223-bcf0-b1704509de3c/resourceGroups/import-terraform-simple-rg-vivrg
 
 # Once command is successifull, review the tfstate file.
 # From the tf file, look for this.
