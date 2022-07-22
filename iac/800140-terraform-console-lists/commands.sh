@@ -1,7 +1,8 @@
 
+cd ../..
+
 cd ./iac/800140-terraform-console-lists
 
-cd ..
 
 terraform console
 
