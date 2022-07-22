@@ -1,5 +1,5 @@
 
-cd ./iac/1000100-create-rg-with-for-each-toset
+cd iac\1001160-create-rg-with-for-each-map-variable-chaining
 
 terraform fmt
 

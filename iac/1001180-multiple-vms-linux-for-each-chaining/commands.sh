@@ -1,5 +1,5 @@
 
-cd .\iac\1000180-multiple-vms-linux-for-each-chaining\
+cd .\iac\1001180-multiple-vms-linux-for-each-chaining\
 
 cd ssh-keys
 
