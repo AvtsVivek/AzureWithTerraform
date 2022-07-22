@@ -10,6 +10,8 @@ exit
 
 terraform console
 
+split(",", "foo,bar,baz")
+
 local.name
 
 var.in
