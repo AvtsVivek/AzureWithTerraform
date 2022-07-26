@@ -12,3 +12,6 @@
 
 ![Enable Data Protection](./EnableDataProtection.jpg)
 
+- Container Storage
+
+![Storage Container](./AzureStorageContainer.jpg)
