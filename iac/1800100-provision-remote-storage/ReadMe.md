@@ -8,3 +8,7 @@
 
 ![Remote State Storage](./AzureStateStorage.jpg)
 
+- Enable data protection for Azure state storage
+
+![Enable Data Protection](./EnableDataProtection.jpg)
+
