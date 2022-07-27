@@ -15,3 +15,8 @@
 - Container Storage
 
 ![Storage Container](./AzureStorageContainer.jpg)
+
+- Getting the following warning when trying to apply.
+
+- So created [this stackoverflow issue](https://stackoverflow.com/q/72727023/1977871)
+
