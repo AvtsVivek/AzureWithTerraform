@@ -17,6 +17,13 @@ terraform show main.tfplan
 
 terraform apply main.tfplan
 
+# Once created, you can use as follows.
+
+    # resource_group_name  = "storage-rg"
+    # storage_account_name = "tfstatetrial"
+    # container_name       = "tfstatefiles"
+    # key                  = "terraform.tfstate"
+
 terraform state list
 
 # For the following command to work, you need to pass on the resource, or data source.

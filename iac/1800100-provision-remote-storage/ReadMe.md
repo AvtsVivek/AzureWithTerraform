@@ -6,6 +6,16 @@
 
 - This is essentially needed for provisioning remote state storage
 
+- Once created, you can use as follows.
+```terraform
+
+    resource_group_name  = "storage-rg"
+    storage_account_name = "tfstatetrial"
+    container_name       = "tfstatefiles"
+    key                  = "terraform.tfstate"
+
+```
+
 ![Remote State Storage](./AzureStateStorage.jpg)
 
 - Enable data protection for Azure state storage
