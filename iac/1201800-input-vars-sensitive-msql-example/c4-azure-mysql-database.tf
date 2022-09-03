@@ -19,9 +19,9 @@ resource "azurerm_mysql_server" "viveksqlserver" {
   geo_redundant_backup_enabled      = false
   infrastructure_encryption_enabled = false
   public_network_access_enabled     = true
-  ssl_enforcement_enabled           = true
+  ssl_enforcement_enabled           = false
   ssl_minimal_tls_version_enforced  = "TLS1_2"
-  tags = var.common_tags
+  tags                              = var.common_tags  
 }
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_database
@@ -32,4 +32,13 @@ resource "azurerm_mysql_database" "vivekmysqldb1" {
   server_name         = azurerm_mysql_server.viveksqlserver.name
   charset             = "utf8"
   collation           = "utf8_unicode_ci"
+}
+
+resource "azurerm_mysql_firewall_rule" "allow_azure_access" {
+  # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_firewall_rule#example-usage-allow-access-to-azure-services
+  name                = "Allow_access_to_Azure_services"
+  resource_group_name = azurerm_resource_group.vivekrg.name
+  server_name         = azurerm_mysql_server.viveksqlserver.name
+  start_ip_address    = "0.0.0.0"
+  end_ip_address      = "0.0.0.0"
 }
