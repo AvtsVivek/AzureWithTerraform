@@ -21,6 +21,7 @@ terraform apply main.destroy.tfplan
 # Now we can plan and apply the resources.
 terraform plan -out main.tfplan
 
+# Ensure that a folder by name local-exec-output-files exists. Else it will throw error.
 # Apply the plan. Then open provisioner-output.txt inside of local-exec-output-files folder and look at the time.
 terraform apply main.tfplan
 
