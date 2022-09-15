@@ -23,8 +23,8 @@ resource "azurerm_storage_account" "storage_account" {
   resource_group_name = azurerm_resource_group.resource_group.name
 
   location                 = var.location
-  account_tier             = var.storage_account_tier
-  account_replication_type = var.storage_account_replication_type
+  account_tier             = var.storage_account_tier # Standard Or Premium
+  account_replication_type = var.storage_account_replication_type # valid options are LRS, GRS, RAGRS, ZRS, GZRS and RAGZRS
   account_kind             = var.storage_account_kind
 
   static_website {
