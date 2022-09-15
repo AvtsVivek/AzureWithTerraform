@@ -16,15 +16,15 @@
 
 ```
 
-![Remote State Storage](./AzureStateStorage.jpg)
+![Remote State Storage](./images/AzureStateStorage.jpg)
 
 - Enable data protection for Azure state storage
 
-![Enable Data Protection](./EnableDataProtection.jpg)
+![Enable Data Protection](./images/EnableDataProtection.jpg)
 
 - Container Storage
 
-![Storage Container](./AzureStorageContainer.jpg)
+![Storage Container](./images/AzureStorageContainer.jpg)
 
 - Getting the following warning when trying to apply.
 
