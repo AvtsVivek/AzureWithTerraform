@@ -5,8 +5,8 @@ resource "azurerm_resource_group" "myrgtoset" {
   location = "westindia"
   tags = {
     environment = "${each.key}"
-    ip = "${each.value.ip}"
-    az = "${each.value.az}"
+    ip          = "${each.value.ip}"
+    az          = "${each.value.az}"
   }
 }
 
