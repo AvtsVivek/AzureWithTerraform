@@ -1,3 +1,4 @@
+cd ../..
 
 cd ./iac/1700100-data-sources-azure-subscription
 
