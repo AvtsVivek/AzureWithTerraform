@@ -25,4 +25,15 @@ If you like or found this useful, please give it a star. Thanks!
 
 - Get-AzResourceGroup
 
+## Setting up the system
+
+- Since we are working with Azure, First install azure cli. This will be the provider for Terraform.  
+  - Then execute az login command. 
+  - Then execute az account show and ensure, your subscription details are displayed. 
+
+- Now install [terraform](https://learn.microsoft.com/en-us/azure/developer/terraform/get-started-windows-bash?tabs=bash#4-install-terraform-for-windows).
+
+
+ 
+
 
