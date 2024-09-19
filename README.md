@@ -27,7 +27,7 @@ If you like or found this useful, please give it a star. Thanks!
 
 ## Setting up the system
 
-- Since we are working with Azure, First install azure cli. This will be the provider for Terraform.  
+- Since we are working with Azure, First install [azure cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli). This will be the provider for Terraform.  
   - Then execute az login command. 
   - Then execute az account show and ensure, your subscription details are displayed. 
 
