@@ -1,5 +1,5 @@
 
-cd iac\1200500-input-vars-assign-with-command
+cd iac\320500-input-vars-assign-with-command
 
 terraform fmt
 

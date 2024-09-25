@@ -1,5 +1,5 @@
 
-cd iac\1200800-input-vars-assign-using-auto-tfvars-file
+cd iac\320800-input-vars-assign-using-auto-tfvars-file
 
 terraform fmt
 

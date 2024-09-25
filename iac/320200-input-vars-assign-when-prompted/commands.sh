@@ -1,5 +1,5 @@
 
-cd iac\1200200-input-vars-assign-when-prompted
+cd iac\320200-input-vars-assign-when-prompted
 
 terraform fmt
 

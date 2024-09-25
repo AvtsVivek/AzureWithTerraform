@@ -1,5 +1,5 @@
 
-cd iac\1201300-input-vars-validation-againest-list
+cd iac\321300-input-vars-validation-againest-list
 
 terraform fmt
 

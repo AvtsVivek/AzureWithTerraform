@@ -1,5 +1,5 @@
 
-cd iac\1200400-input-vars-assign-using-env-vars
+cd iac\320400-input-vars-assign-using-env-vars
 
 terraform fmt
 

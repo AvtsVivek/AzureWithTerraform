@@ -1,5 +1,5 @@
 
-cd ./iac/1201400-terraform-console-maps
+cd ./iac/321400-terraform-console-maps
 
 terraform fmt
 

@@ -1,5 +1,5 @@
 
-cd .\iac\1201500-input-vars-sensitive\
+cd .\iac\321500-input-vars-sensitive\
 
 terraform fmt
 

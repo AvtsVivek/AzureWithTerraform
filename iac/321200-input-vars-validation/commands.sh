@@ -1,5 +1,5 @@
 
-cd iac\1201200-input-vars-validation
+cd iac\321200-input-vars-validation
 
 terraform fmt
 

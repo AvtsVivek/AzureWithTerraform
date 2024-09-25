@@ -1,5 +1,5 @@
 
-cd iac\1100100-meta-arg-lifecycle
+cd iac\310100-meta-arg-lifecycle
 
 terraform fmt
 

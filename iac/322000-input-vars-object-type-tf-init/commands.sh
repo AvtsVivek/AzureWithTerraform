@@ -1,5 +1,5 @@
 # cd into the directory.
-cd ./iac/1202000-input-vars-object-type-tf-init
+cd ./iac/32000-input-vars-object-type-tf-init
 
 terraform fmt
 

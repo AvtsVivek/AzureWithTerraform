@@ -1,5 +1,5 @@
 
-cd iac/1202100-input-vars-object-create-rg
+cd iac/322100-input-vars-object-create-rg
 
 terraform fmt
 

@@ -1,5 +1,5 @@
 # cd into the directory.
-cd ./iac/1202300-input-vars-tuple-type-tf-console
+cd iac\322300-input-vars-tuple-type-tf-console
 
 terraform fmt
 

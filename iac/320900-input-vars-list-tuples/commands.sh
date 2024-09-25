@@ -1,5 +1,5 @@
 
-cd iac\1200900-input-vars-list-tuples
+cd iac\320900-input-vars-list-tuples
 
 terraform fmt
 

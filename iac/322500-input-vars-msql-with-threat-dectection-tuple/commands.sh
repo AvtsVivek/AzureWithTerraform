@@ -1,5 +1,5 @@
 
-cd iac\1202500-input-vars-msql-with-threat-dectection-tuple
+cd iac/322500-input-vars-msql-with-threat-dectection-tuple
 
 cd ../..
 

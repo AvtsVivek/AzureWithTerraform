@@ -1,5 +1,5 @@
 
-cd iac\1100300-meta-arg-lifecycle-prevent-destroy
+cd iac\310300-meta-arg-lifecycle-prevent-destroy
 
 terraform fmt
 

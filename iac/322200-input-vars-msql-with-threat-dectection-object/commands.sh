@@ -1,5 +1,5 @@
 
-cd iac\1202200-input-vars-msql-with-threat-dectection-object
+cd iac\322200-input-vars-msql-with-threat-dectection-object
 
 terraform fmt
 

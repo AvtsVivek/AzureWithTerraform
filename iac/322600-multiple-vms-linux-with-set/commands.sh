@@ -1,5 +1,5 @@
 
-cd .\iac\1202600-multiple-vms-linux-with-set\
+cd /iac/322600-multiple-vms-linux-with-set
 
 code . -r
 

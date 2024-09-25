@@ -1,5 +1,5 @@
 
-cd iac\1001150-create-rg-with-for-each-map-variable
+cd iac\301150-create-rg-with-for-each-map-variable
 
 terraform fmt
 

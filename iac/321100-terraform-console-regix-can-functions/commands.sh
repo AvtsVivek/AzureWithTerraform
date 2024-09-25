@@ -1,5 +1,5 @@
 
-cd ./iac/1201100-terraform-console-functions
+cd ./iac/321100-terraform-console-functions
 
 terraform fmt
 

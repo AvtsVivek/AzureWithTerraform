@@ -1,5 +1,5 @@
 # cd into the directory.
-cd ./iac/1201900-input-vars-object-type-tf-console
+cd ./iac/321900-input-vars-object-type-tf-console
 
 terraform fmt
 
