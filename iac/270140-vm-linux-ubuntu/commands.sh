@@ -1,5 +1,5 @@
 
-cd iac\700140-vm-linux-ubuntu
+cd iac\270140-vm-linux-ubuntu
 
 terraform fmt
 

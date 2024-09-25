@@ -1,5 +1,5 @@
 
-cd iac\100500-create-rg-azuredocs 
+cd iac\210500-create-rg-azuredocs 
 
 cd ..\..
 

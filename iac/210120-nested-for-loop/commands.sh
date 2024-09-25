@@ -2,7 +2,7 @@
 cd ../..
 
 # cd into the directory.
-cd iac\100120-nested-for-loop
+cd iac\210120-nested-for-loop
 
 cd ../..
 

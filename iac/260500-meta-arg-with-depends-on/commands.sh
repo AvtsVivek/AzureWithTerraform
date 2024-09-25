@@ -1,5 +1,5 @@
 
-cd iac\600500-meta-arg-with-depends-on
+cd iac\260500-meta-arg-with-depends-on
 
 terraform fmt
 

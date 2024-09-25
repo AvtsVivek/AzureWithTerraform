@@ -1,5 +1,5 @@
 
-cd iac/800500-multiple-vms-linux
+cd iac/280500-multiple-vms-linux
 
 cd ..\..
 

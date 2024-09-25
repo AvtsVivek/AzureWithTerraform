@@ -2,7 +2,7 @@
 cd ../..
 
 # cd into the directory.
-cd iac\100110-for-loop
+cd iac\210110-for-loop
 
 cd ../..
 

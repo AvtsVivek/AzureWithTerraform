@@ -2,7 +2,7 @@
 cd ../..
 
 # cd into the directory.
-cd iac\100090-local-output-example
+cd iac\210090-local-output-example
 
 cd ../..
 

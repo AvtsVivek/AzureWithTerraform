@@ -1,5 +1,5 @@
 
-cd iac\200200-init-upgrade-dependency-lock
+cd iac\220200-init-upgrade-dependency-lock
 
 # Terraform follows, the following workflow.
 

@@ -1,5 +1,5 @@
 
-cd iac\3-create-vnet
+cd iac\230100-create-vnet
 
 terraform fmt
 

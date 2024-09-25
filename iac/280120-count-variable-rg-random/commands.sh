@@ -1,5 +1,5 @@
 
-cd iac\800120-count-variable-rg-random
+cd iac\280120-count-variable-rg-random
 
 terraform fmt
 

@@ -1,5 +1,5 @@
 
-cd iac\800100-meta-arg-count-rg
+cd iac\280100-meta-arg-count-rg
 
 terraform fmt
 

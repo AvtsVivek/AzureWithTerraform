@@ -1,5 +1,5 @@
 
-cd iac\700100-file-intro
+cd iac\270100-file-intro
 
 terraform fmt
 

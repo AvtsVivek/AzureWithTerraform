@@ -1,5 +1,5 @@
 
-cd iac\500100-virtual-network
+cd iac\250100-virtual-network
 
 terraform fmt
 

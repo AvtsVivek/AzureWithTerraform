@@ -1,4 +1,4 @@
-cd iac\400100-multiple-provider
+cd iac\240100-multiple-provider
 
 terraform fmt
 

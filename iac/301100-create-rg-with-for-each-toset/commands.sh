@@ -1,7 +1,7 @@
 
 cd ..\.. 
 
-cd ./iac/1001100-create-rg-with-for-each-toset
+cd ./iac/301100-create-rg-with-for-each-toset
 
 terraform fmt
 

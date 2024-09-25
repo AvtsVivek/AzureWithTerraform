@@ -1,7 +1,7 @@
 
 cd ..\.. 
 
-cd ./iac/1000100-create-rg-with-for-each-var
+cd ./iac/300100-create-rg-with-for-each-var
 
 terraform fmt
 

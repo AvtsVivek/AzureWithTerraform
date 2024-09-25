@@ -2,7 +2,7 @@
 cd ../..
 
 # cd into the directory.
-cd iac\100060-output-example
+cd iac\210060-output-example
 
 # Terraform follows, the following workflow.
 

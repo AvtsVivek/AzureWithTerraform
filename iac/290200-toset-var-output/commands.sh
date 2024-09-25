@@ -1,5 +1,5 @@
 # cd into the directory.
-cd ./iac/900200-toset-var-output
+cd ./iac/290200-toset-var-output
 
 terraform init
 

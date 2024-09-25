@@ -1,7 +1,7 @@
 
 cd ..\..
 
-cd iac\100400-create-rg-simple
+cd iac\210400-create-rg-simple
 
 cd ..\..
 
