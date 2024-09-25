@@ -1,5 +1,5 @@
 
-cd iac\1300200-output-sensitive-example
+cd iac\330200-output-sensitive-example
 
 cd ..\..
 

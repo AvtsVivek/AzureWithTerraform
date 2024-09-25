@@ -1,5 +1,5 @@
 
-cd ./iac/1500200-terraform-full-example
+cd iac\350200-terraform-full-example
 
 cd ../..
 

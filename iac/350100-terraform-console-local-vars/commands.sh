@@ -1,5 +1,5 @@
 
-cd ./iac/1500100-terraform-console-local-vars
+cd iac\350100-terraform-console-local-vars
 
 cd ../..
 

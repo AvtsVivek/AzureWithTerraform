@@ -1,5 +1,5 @@
 
-cd ./iac/1600300-conditional-expressions-full-ex
+cd iac\360300-conditional-expressions-full-ex
 
 cd ../..
 

@@ -1,5 +1,5 @@
 
-cd iac\1900500-create-rg-taint-untaint
+cd iac\390500-create-rg-taint-untaint
 
 cd ..\..
 

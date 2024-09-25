@@ -1,5 +1,5 @@
 
-cd iac\1300100-output-basic-example
+cd iac\330100-output-basic-example
 
 cd ..\..
 

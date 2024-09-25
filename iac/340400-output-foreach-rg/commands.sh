@@ -1,5 +1,5 @@
 
-cd iac\1400400-output-foreach-rg
+cd iac\340400-output-foreach-rg
 
 cd ..\..
 

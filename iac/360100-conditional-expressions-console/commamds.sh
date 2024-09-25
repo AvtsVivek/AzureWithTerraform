@@ -1,5 +1,5 @@
 
-cd ./iac/1600100-conditional-expressions-console
+cd iac\360100-conditional-expressions-console
 
 cd ../..
 

@@ -1,5 +1,5 @@
 
-cd iac\1900700-create-rg-refresh-only
+cd iac\390700-create-rg-refresh-only
 
 cd ..\..
 

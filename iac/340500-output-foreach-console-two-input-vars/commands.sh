@@ -1,6 +1,6 @@
 cd ../..
 
-cd ./iac/1400500-output-foreach-console-two-input-vars
+cd ./iac/340500-output-foreach-console-two-input-vars
 
 cd ../..
 

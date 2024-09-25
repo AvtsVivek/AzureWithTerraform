@@ -1,5 +1,5 @@
 
-cd ./iac/1800100-provision-remote-storage
+cd iac\380100-provision-remote-storage
 
 cd ../..
 

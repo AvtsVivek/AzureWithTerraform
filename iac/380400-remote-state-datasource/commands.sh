@@ -1,5 +1,5 @@
 
-cd ./iac/1800400-remote-state-datasource
+cd iac\380400-remote-state-datasource
 
 cd ../..
 

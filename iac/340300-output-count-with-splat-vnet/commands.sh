@@ -1,5 +1,5 @@
 
-cd iac\1400300-output-count-with-splat-vnet
+cd iac\340300-output-count-with-splat-vnet
 
 cd ..\..
 

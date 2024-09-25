@@ -1,5 +1,5 @@
 
-cd ./iac/1800200-remote-state-storage-locking-simple-rg
+cd iac\380200-remote-state-storage-locking-simple-rg
 
 cd ../..
 

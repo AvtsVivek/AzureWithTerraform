@@ -1,5 +1,5 @@
 
-cd ./iac/1800600-remote-state-datasource-vm-full-example/project-2-vm-app
+cd iac\380600-remote-state-datasource-vm-full-example/project-2-vm-app
 
 cd ../..
 

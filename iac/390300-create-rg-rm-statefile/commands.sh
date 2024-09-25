@@ -1,5 +1,5 @@
 
-cd iac/1900200-create-rg-mv-statefile
+cd iac\390200-create-rg-mv-statefile
 
 cd ..\..
 

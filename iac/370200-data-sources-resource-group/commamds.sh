@@ -1,5 +1,5 @@
 
-cd ./iac/1700200-data-sources-resource-group
+cd iac\370200-data-sources-resource-group
 
 cd ../..
 

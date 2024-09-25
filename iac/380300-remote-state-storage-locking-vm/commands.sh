@@ -1,5 +1,5 @@
 
-cd ./iac/1800300-remote-state-storage-locking-vm
+cd iac\380300-remote-state-storage-locking-vm
 
 cd ../..
 

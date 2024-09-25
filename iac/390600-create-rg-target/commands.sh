@@ -1,5 +1,5 @@
 
-cd iac\1900600-create-rg-target
+cd iac\390600-create-rg-target
 
 cd ..\..
 

@@ -1,5 +1,5 @@
 
-cd ./iac/1900400-create-rg-state-pull-push
+cd ./iac/390400-create-rg-state-pull-push
 
 cd ../..
 

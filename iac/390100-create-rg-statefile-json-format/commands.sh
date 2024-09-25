@@ -1,5 +1,5 @@
 
-cd iac/1900100-create-rg-statefile-json-format
+cd iac\390100-create-rg-statefile-json-format
 
 terraform fmt
 

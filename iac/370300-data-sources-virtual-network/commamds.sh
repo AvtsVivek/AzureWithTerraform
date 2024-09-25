@@ -1,5 +1,5 @@
 
-cd ./iac/1700300-data-sources-virtual-network
+cd iac\370300-data-sources-virtual-network
 
 cd ../..
 

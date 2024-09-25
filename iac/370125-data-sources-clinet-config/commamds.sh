@@ -1,6 +1,6 @@
 cd ../..
 
-cd ./iac/1700125-data-sources-clinet-config
+cd iac\370125-data-sources-clinet-config
 
 cd ../..
 

@@ -1,5 +1,5 @@
 
-cd iac\1400600-output-foreach-vnet
+cd iac\340600-output-foreach-vnet
 
 cd ..\..
 

@@ -1,6 +1,5 @@
 
-
-cd iac\1900300-create-rg-rm-statefile
+cd iac\390300-create-rg-rm-statefile
 
 cd ..\..
 

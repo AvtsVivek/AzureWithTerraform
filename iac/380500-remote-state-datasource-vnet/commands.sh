@@ -1,5 +1,5 @@
 
-cd ./iac/1800500-remote-state-datasource-vnet
+cd iac\380500-remote-state-datasource-vnet
 
 cd ../..
 
