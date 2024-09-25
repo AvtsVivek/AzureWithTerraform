@@ -1,5 +1,5 @@
 
-cd ./iac/2205600-file-provisioner-remote-exec
+cd ./iac/425600-file-provisioner-remote-exec
 
 cd ../..
 

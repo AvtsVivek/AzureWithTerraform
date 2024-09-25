@@ -1,5 +1,5 @@
 
-cd .\iac\2600100-terraform-cloud
+cd .\iac\460100-terraform-cloud
 
 cd .\terraform-manifests\
 

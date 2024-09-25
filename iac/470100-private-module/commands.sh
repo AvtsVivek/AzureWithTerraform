@@ -1,5 +1,5 @@
 
-cd iac\2700100-private-module
+cd iac\470100-private-module
 
 cd ..\..
 

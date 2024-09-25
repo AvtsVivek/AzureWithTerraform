@@ -1,5 +1,5 @@
 
-cd iac\3200100-create-rg-simple-debug
+cd iac\520100-create-rg-simple-debug
 
 cd ..\..
 

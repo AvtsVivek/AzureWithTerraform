@@ -1,4 +1,4 @@
-cd iac/3701000-data-azurerm-client-config
+cd iac/571000-data-azurerm-client-config
 
 cd ../..
 

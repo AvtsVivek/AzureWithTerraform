@@ -1,5 +1,5 @@
 
-cd iac\2100200-null-resource-locals-output
+cd iac\410200-null-resource-locals-output
 
 cd ..\..
 

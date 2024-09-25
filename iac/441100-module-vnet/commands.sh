@@ -1,5 +1,5 @@
 
-cd iac\2400100-module-vnet
+cd iac\440100-module-vnet
 
 cd ..\..
 

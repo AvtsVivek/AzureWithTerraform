@@ -1,5 +1,5 @@
 
-cd iac\2500100-simple-local-module-rg
+cd iac\450100-simple-local-module-rg
 
 cd ..\..
 

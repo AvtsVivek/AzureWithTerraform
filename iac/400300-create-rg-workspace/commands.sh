@@ -1,5 +1,5 @@
 
-cd iac\2000300-create-rg-workspace
+cd iac\400300-create-rg-workspace
 
 cd ..\..
 

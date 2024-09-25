@@ -1,5 +1,5 @@
 
-cd iac\2200100-provisioner-random-examples
+cd iac\420100-provisioner-random-examples
 
 cd ..\..
 

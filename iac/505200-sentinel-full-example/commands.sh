@@ -1,5 +1,5 @@
 
-cd .\iac\3005100-sentinel-full-example
+cd .\iac\505200-sentinel-full-example
 
 cd .\terraform-manifests\
 

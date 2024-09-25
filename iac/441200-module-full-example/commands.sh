@@ -1,5 +1,5 @@
 
-cd iac\2400200-module-full-example
+cd iac\441200-module-full-example
 
 cd ..\..
 

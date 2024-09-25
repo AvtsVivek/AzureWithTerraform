@@ -1,6 +1,6 @@
 cd ../..
 
-cd ./iac/2205400-file-provisioner-full-example
+cd ./iac/425400-file-provisioner-full-example
 
 code . -r
 

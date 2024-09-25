@@ -1,5 +1,5 @@
 
-cd ./iac/2000400-workspace-full-example
+cd iac\400400-workspace-full-example
 
 cd ../..
 

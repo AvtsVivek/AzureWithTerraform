@@ -1,5 +1,5 @@
 
-cd iac\2000200-workspace-output
+cd iac\400200-workspace-output
 
 cd ..\..
 

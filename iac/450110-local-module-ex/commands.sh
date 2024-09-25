@@ -1,5 +1,5 @@
 
-cd iac\2500110-local-module-ex
+cd iac\450110-local-module-ex
 
 cd ..\..
 

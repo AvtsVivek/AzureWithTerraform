@@ -1,6 +1,6 @@
 
 
-cd iac\2300100-import-simple-rg\import-resource
+cd iac\430100-import-simple-rg\import-resource
 
 cd ..\..
 

@@ -1,5 +1,7 @@
 
-cd iac/3401300-external-provider-vm
+cd iac/541300-external-provider-vm/terraform-manifests
+
+cd iac/541300-external-provider-vm
 
 cd ../..
 

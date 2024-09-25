@@ -1,6 +1,6 @@
 
 
-cd iac\2200500-static-website-update-with-null-provisioner
+cd iac\420500-static-website-update-with-null-provisioner
 
 cd ..\..
 

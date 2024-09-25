@@ -1,5 +1,5 @@
 
-cd iac\3101000-nsg-without-dynamic-block
+cd iac\511000-nsg-without-dynamic-block
 
 cd ..\..
 

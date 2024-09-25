@@ -1,6 +1,6 @@
 
 # cd into the directory.
-cd ./iac/2000100-workspace-basics
+cd iac\400100-workspace-basics
 
 cd ..\..
 

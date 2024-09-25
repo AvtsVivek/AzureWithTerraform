@@ -1,5 +1,5 @@
 
-cd iac/3601000-provider-management
+cd iac/561000-provider-management
 
 cd ../..
 

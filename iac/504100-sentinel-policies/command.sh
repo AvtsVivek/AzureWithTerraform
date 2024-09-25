@@ -1,4 +1,4 @@
-cd .\iac\3005100-sentinel-policies
+cd .\iac\504100-sentinel-policies
 
 cd .\sentinel-policies\
 

@@ -1,5 +1,5 @@
 
-cd iac\3300100-create-rg-simple-override
+cd iac\530200-create-rg-simple-override
 
 cd ..\..
 

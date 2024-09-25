@@ -1,5 +1,5 @@
 
-cd iac\3000100-simple-sentinel-cli
+cd iac\500100-simple-sentinel-cli
 
 cd ..\..
 

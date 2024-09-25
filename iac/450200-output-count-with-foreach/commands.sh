@@ -1,5 +1,5 @@
 
-cd iac\2500200-output-count-with-foreach
+cd iac\451200-output-count-with-foreach
 
 cd ..\..
 

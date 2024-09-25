@@ -1,6 +1,6 @@
 cd ../..
 
-cd ./iac/2401110-module-app-registration
+cd ./iac/441110-module-app-registration
 
 terraform fmt
 

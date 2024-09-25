@@ -1,5 +1,5 @@
 
-cd iac\3400200-external-provider-ps-rg
+cd iac\540200-external-provider-ps-rg
 
 cd ..\..
 

@@ -1,7 +1,7 @@
 
 # Run the following command ni git bash command prompt. 
 # Running this on powershell prompt will not work.
-cd iac/3401200-external-provider-bash-ssh-keygen/
+cd iac/541200-external-provider-bash-ssh-keygen/
 
 cd ../..
 

@@ -1,5 +1,5 @@
 
-cd ./iac/2205500-file-provisioner-fail-example
+cd ./iac/425500-file-provisioner-fail-example
 
 cd ../..
 

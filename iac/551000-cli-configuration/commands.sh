@@ -1,5 +1,5 @@
 
-cd ./iac/3501000-cli-configuration
+cd ./iac/551000-cli-configuration
 
 cd ../..
 

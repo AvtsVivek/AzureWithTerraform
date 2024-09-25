@@ -1,5 +1,5 @@
 
-cd iac\3101200-nsg-with-dynamic-block-map 
+cd iac\511200-nsg-with-dynamic-block-map 
 
 cd ..\..
 

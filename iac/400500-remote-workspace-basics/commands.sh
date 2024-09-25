@@ -1,6 +1,6 @@
 
 # cd into the directory.
-cd ./iac/2000500-remote-workspace-basics
+cd iac\400500-remote-workspace-basics
 
 cd ..\..
 

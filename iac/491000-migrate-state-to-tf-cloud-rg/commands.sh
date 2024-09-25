@@ -1,5 +1,5 @@
 
-cd iac\2901000-migrate-state-to-tf-cloud-rg
+cd iac\491000-migrate-state-to-tf-cloud-rg
 
 cd ..\..
 

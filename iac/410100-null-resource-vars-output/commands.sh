@@ -1,5 +1,5 @@
 
-cd iac\2100100-null-resource-vars-output
+cd iac\410100-null-resource-vars-output
 
 cd ..\..
 
