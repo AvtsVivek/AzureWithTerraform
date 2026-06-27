@@ -9,6 +9,8 @@ If you like or found this useful, please give it a star. Thanks!
 
 ## Some useful commands
 
+- az login 
+
 - az account show
 
 - az account list
@@ -18,6 +20,8 @@ If you like or found this useful, please give it a star. Thanks!
 - az account set --subscription "Mewurk - DevTest"
 
 ## The following needs to be used in azure powershell
+
+- Connect-AzAccount
 
 - Get-AzResourceGroup
 
@@ -34,6 +38,6 @@ If you like or found this useful, please give it a star. Thanks!
 - Now install [terraform](https://learn.microsoft.com/en-us/azure/developer/terraform/get-started-windows-bash?tabs=bash#4-install-terraform-for-windows).
 
 
- - Just a trial. Here we go
+ - 
 
 
